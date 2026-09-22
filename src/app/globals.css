@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@import "@fontsource/instrument-serif/latin-400.css";
+@import "@fontsource/instrument-serif/latin-400-italic.css";
+
+/* 100bon — minimal clair, papier chaud, encre douce. */
+:root {
+  --paper: #f5f2ec;
+  --paper-2: #efebe3;
+  --card: #fbfaf7;
+  --ink: #1d1b18;
+  --ink-2: #4a463f;
+  --muted: #8a847a;
+  --line: #e2ddd3;
+  --line-2: #d4cec2;
+  --accent: #6b5a3e;
+  --danger: #a4493d;
+  --ok: #5d7a52;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-accent: var(--accent);
+  --color-danger: var(--danger);
+  --color-ok: var(--ok);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+}
+
+::selection {
+  background: #e6dcc8;
+}
+
+.eyebrow {
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.display {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.02;
+}
+
+.hairline {
+  border-color: var(--line);
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.breathe {
+  animation: breathe 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise,
+  .breathe {
+    animation: none;
+  }
+}

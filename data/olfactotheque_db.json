@@ -1,0 +1,8189 @@
+{
+  "meta": {
+    "name": "Olfactothèque — collection de Simon",
+    "version": "2.0.0",
+    "generated_at": "2026-09-22",
+    "counts": {
+      "perfumes": 25,
+      "oils": 3,
+      "layerings": 50,
+      "notes": 138
+    },
+    "scales": {
+      "wear_month_score": {
+        "0": "à éviter",
+        "1": "possible sous conditions (intérieur climatisé, dose minimale)",
+        "2": "bon",
+        "3": "idéal"
+      },
+      "months_index": "Tableaux de 12 valeurs, index 0 = janvier … 11 = décembre",
+      "sillage": {
+        "1": "Faible",
+        "2": "Modéré",
+        "3": "Explosif",
+        "4": "Bombe nucléaire"
+      },
+      "owned_format": [
+        "original",
+        "dupe",
+        "original + dupe",
+        "inconnu"
+      ],
+      "layering_status": [
+        "validé",
+        "recommandé",
+        "à tester",
+        "déconseillé"
+      ],
+      "perception_risk": {
+        "élevé": "base ambroxan / muscs : tu le perds vite, les autres le sentent encore",
+        "moyen": "perception intermittente",
+        "faible": "reste perceptible"
+      }
+    },
+    "climate_reference": {
+      "dubai_c": {
+        "jan": "19-24",
+        "fev": "20-25",
+        "mar": "23-29",
+        "avr": "27-33",
+        "mai": "32-38",
+        "juin": "34-40",
+        "juil": "36-42",
+        "aout": "36-42",
+        "sep": "33-39",
+        "oct": "30-35",
+        "nov": "25-30",
+        "dec": "21-26"
+      },
+      "france_rouen_c": {
+        "jan": "2-7",
+        "fev": "2-8",
+        "mar": "4-12",
+        "avr": "6-15",
+        "mai": "9-18",
+        "juin": "12-21",
+        "juil": "14-24",
+        "aout": "14-24",
+        "sep": "11-20",
+        "oct": "8-15",
+        "nov": "5-10",
+        "dec": "3-7"
+      }
+    },
+    "rules": [
+      "Dubaï : l'intérieur climatisé rend les chauds portables toute l'année le soir ; la vraie limite est l'extérieur en journée.",
+      "Frais/agrumes : le froid ne les évapore pas, il les empêche de diffuser — il leur faut une base (White Musk).",
+      "Bases ambroxan (MYSLF, Bois Impérial, Musc Nurāsana) : ne jamais doser à ton propre nez ; tissu + huile naturelle dessous.",
+      "Layering : chercher le contraste, jamais deux parfums de même ADN ni deux bases ambroxan."
+    ]
+  },
+  "families": [
+    {
+      "id": "frais",
+      "label": "Frais / aquatique",
+      "color": "#5cb8c4"
+    },
+    {
+      "id": "propre",
+      "label": "Propre / musqué",
+      "color": "#aebfca"
+    },
+    {
+      "id": "floral",
+      "label": "Floral",
+      "color": "#dcb0d2"
+    },
+    {
+      "id": "fruite",
+      "label": "Fruité",
+      "color": "#ef8a9b"
+    },
+    {
+      "id": "gourmand",
+      "label": "Gourmand",
+      "color": "#e0b274"
+    },
+    {
+      "id": "ambre",
+      "label": "Ambré",
+      "color": "#d68b46"
+    },
+    {
+      "id": "boise",
+      "label": "Boisé sec",
+      "color": "#9c8f6d"
+    },
+    {
+      "id": "oud",
+      "label": "Oud / oriental",
+      "color": "#c06a60"
+    }
+  ],
+  "note_categories": [
+    {
+      "id": "agrume",
+      "label": "Agrumes"
+    },
+    {
+      "id": "fruit",
+      "label": "Fruits"
+    },
+    {
+      "id": "floral",
+      "label": "Floral"
+    },
+    {
+      "id": "epice",
+      "label": "Épices"
+    },
+    {
+      "id": "aromatique",
+      "label": "Aromatique / herbes"
+    },
+    {
+      "id": "boise",
+      "label": "Boisé"
+    },
+    {
+      "id": "resine_ambre",
+      "label": "Résines / ambre"
+    },
+    {
+      "id": "gourmand",
+      "label": "Gourmand"
+    },
+    {
+      "id": "musc",
+      "label": "Musc / propre"
+    },
+    {
+      "id": "cuir",
+      "label": "Cuir / daim"
+    },
+    {
+      "id": "fume_tabac",
+      "label": "Fumé / tabac"
+    },
+    {
+      "id": "aquatique_mineral",
+      "label": "Aquatique / minéral"
+    },
+    {
+      "id": "oud",
+      "label": "Oud"
+    }
+  ],
+  "notes": [
+    {
+      "id": "abricot",
+      "name": "Abricot",
+      "category": "fruit"
+    },
+    {
+      "id": "agrumes",
+      "name": "Agrumes",
+      "category": "agrume"
+    },
+    {
+      "id": "akigalawood",
+      "name": "Akigalawood",
+      "category": "boise"
+    },
+    {
+      "id": "aldehydes",
+      "name": "Aldéhydes",
+      "category": "musc"
+    },
+    {
+      "id": "ambre",
+      "name": "Ambre",
+      "category": "resine_ambre"
+    },
+    {
+      "id": "ambre_gris",
+      "name": "Ambre gris",
+      "category": "resine_ambre"
+    },
+    {
+      "id": "ambrette",
+      "name": "Ambrette",
+      "category": "musc"
+    },
+    {
+      "id": "ambrofix_ambroxan",
+      "name": "Ambrofix (ambroxan)",
+      "category": "musc"
+    },
+    {
+      "id": "ananas",
+      "name": "Ananas",
+      "category": "fruit"
+    },
+    {
+      "id": "basilic",
+      "name": "Basilic",
+      "category": "aromatique"
+    },
+    {
+      "id": "basilic_thai",
+      "name": "Basilic thaï",
+      "category": "aromatique"
+    },
+    {
+      "id": "baume_de_sapin",
+      "name": "Baume de sapin",
+      "category": "resine_ambre"
+    },
+    {
+      "id": "baume_de_tolu",
+      "name": "Baume de Tolu",
+      "category": "resine_ambre"
+    },
+    {
+      "id": "baume_du_perou",
+      "name": "Baume du Pérou",
+      "category": "resine_ambre"
+    },
+    {
+      "id": "benjoin",
+      "name": "Benjoin",
+      "category": "resine_ambre"
+    },
+    {
+      "id": "bergamote",
+      "name": "Bergamote",
+      "category": "agrume"
+    },
+    {
+      "id": "bergamote_de_calabre",
+      "name": "Bergamote de Calabre",
+      "category": "agrume"
+    },
+    {
+      "id": "bigarade",
+      "name": "Bigarade",
+      "category": "agrume"
+    },
+    {
+      "id": "bois_de_gaiac",
+      "name": "Bois de gaïac",
+      "category": "boise"
+    },
+    {
+      "id": "bourgeons_de_cassis",
+      "name": "Bourgeons de cassis",
+      "category": "fruit"
+    },
+    {
+      "id": "cacao",
+      "name": "Cacao",
+      "category": "gourmand"
+    },
+    {
+      "id": "cachemire",
+      "name": "Cachemire",
+      "category": "musc"
+    },
+    {
+      "id": "cajeput",
+      "name": "Cajeput",
+      "category": "aromatique"
+    },
+    {
+      "id": "calypsone_accord_marin",
+      "name": "Calypsone (accord marin)",
+      "category": "aquatique_mineral"
+    },
+    {
+      "id": "cannelle",
+      "name": "Cannelle",
+      "category": "epice"
+    },
+    {
+      "id": "caramel",
+      "name": "Caramel",
+      "category": "gourmand"
+    },
+    {
+      "id": "cardamome",
+      "name": "Cardamome",
+      "category": "epice"
+    },
+    {
+      "id": "cardamome_absolue",
+      "name": "Cardamome absolue",
+      "category": "epice"
+    },
+    {
+      "id": "cassis",
+      "name": "Cassis",
+      "category": "fruit"
+    },
+    {
+      "id": "cedrat",
+      "name": "Cédrat",
+      "category": "agrume"
+    },
+    {
+      "id": "cedre",
+      "name": "Cèdre",
+      "category": "boise"
+    },
+    {
+      "id": "ciste",
+      "name": "Ciste",
+      "category": "resine_ambre"
+    },
+    {
+      "id": "citron",
+      "name": "Citron",
+      "category": "agrume"
+    },
+    {
+      "id": "citron_d_italie",
+      "name": "Citron d'Italie",
+      "category": "agrume"
+    },
+    {
+      "id": "citron_de_sicile",
+      "name": "Citron de Sicile",
+      "category": "agrume"
+    },
+    {
+      "id": "clou_de_girofle",
+      "name": "Clou de girofle",
+      "category": "epice"
+    },
+    {
+      "id": "coco",
+      "name": "Coco",
+      "category": "gourmand"
+    },
+    {
+      "id": "coriandre",
+      "name": "Coriandre",
+      "category": "aromatique"
+    },
+    {
+      "id": "cuir",
+      "name": "Cuir",
+      "category": "cuir"
+    },
+    {
+      "id": "cypriol",
+      "name": "Cypriol",
+      "category": "boise"
+    },
+    {
+      "id": "daim",
+      "name": "Daim",
+      "category": "cuir"
+    },
+    {
+      "id": "datte",
+      "name": "Datte",
+      "category": "fruit"
+    },
+    {
+      "id": "elemi",
+      "name": "Élémi",
+      "category": "resine_ambre"
+    },
+    {
+      "id": "encens",
+      "name": "Encens",
+      "category": "resine_ambre"
+    },
+    {
+      "id": "feuille_de_cannelle",
+      "name": "Feuille de cannelle",
+      "category": "epice"
+    },
+    {
+      "id": "feuilles_de_violette",
+      "name": "Feuilles de violette",
+      "category": "floral"
+    },
+    {
+      "id": "feve_tonka",
+      "name": "Fève tonka",
+      "category": "gourmand"
+    },
+    {
+      "id": "figue",
+      "name": "Figue",
+      "category": "fruit"
+    },
+    {
+      "id": "fleur_d_oranger_de_tunisie",
+      "name": "Fleur d'oranger de Tunisie",
+      "category": "floral"
+    },
+    {
+      "id": "fleur_d_oranger_marocaine",
+      "name": "Fleur d'oranger marocaine",
+      "category": "floral"
+    },
+    {
+      "id": "fleur_de_tilleul",
+      "name": "Fleur de tilleul",
+      "category": "floral"
+    },
+    {
+      "id": "framboise",
+      "name": "Framboise",
+      "category": "fruit"
+    },
+    {
+      "id": "freesia",
+      "name": "Freesia",
+      "category": "floral"
+    },
+    {
+      "id": "fruit_de_la_passion",
+      "name": "Fruit de la passion",
+      "category": "fruit"
+    },
+    {
+      "id": "fruits_mediterraneens",
+      "name": "Fruits méditerranéens",
+      "category": "fruit"
+    },
+    {
+      "id": "genevrier",
+      "name": "Genévrier",
+      "category": "aromatique"
+    },
+    {
+      "id": "georgywood",
+      "name": "Georgywood",
+      "category": "boise"
+    },
+    {
+      "id": "geranium",
+      "name": "Géranium",
+      "category": "floral"
+    },
+    {
+      "id": "geranium_bourbon",
+      "name": "Géranium bourbon",
+      "category": "floral"
+    },
+    {
+      "id": "geranium_rosat",
+      "name": "Géranium rosat",
+      "category": "floral"
+    },
+    {
+      "id": "gingembre",
+      "name": "Gingembre",
+      "category": "epice"
+    },
+    {
+      "id": "graine_de_carotte",
+      "name": "Graine de carotte",
+      "category": "aromatique"
+    },
+    {
+      "id": "heliotrope",
+      "name": "Héliotrope",
+      "category": "floral"
+    },
+    {
+      "id": "illet",
+      "name": "Œillet",
+      "category": "floral"
+    },
+    {
+      "id": "immortelle",
+      "name": "Immortelle",
+      "category": "floral"
+    },
+    {
+      "id": "iris",
+      "name": "Iris",
+      "category": "floral"
+    },
+    {
+      "id": "iris_orris",
+      "name": "Iris (orris)",
+      "category": "floral"
+    },
+    {
+      "id": "jacinthe",
+      "name": "Jacinthe",
+      "category": "floral"
+    },
+    {
+      "id": "jasmin",
+      "name": "Jasmin",
+      "category": "floral"
+    },
+    {
+      "id": "jasmin_d_egypte",
+      "name": "Jasmin d'Égypte",
+      "category": "floral"
+    },
+    {
+      "id": "jasmin_sambac",
+      "name": "Jasmin sambac",
+      "category": "floral"
+    },
+    {
+      "id": "labdanum",
+      "name": "Labdanum",
+      "category": "resine_ambre"
+    },
+    {
+      "id": "lactones",
+      "name": "Lactones",
+      "category": "gourmand"
+    },
+    {
+      "id": "lavande",
+      "name": "Lavande",
+      "category": "aromatique"
+    },
+    {
+      "id": "lavandin",
+      "name": "Lavandin",
+      "category": "aromatique"
+    },
+    {
+      "id": "lilas",
+      "name": "Lilas",
+      "category": "floral"
+    },
+    {
+      "id": "litchi",
+      "name": "Litchi",
+      "category": "fruit"
+    },
+    {
+      "id": "magnolia",
+      "name": "Magnolia",
+      "category": "floral"
+    },
+    {
+      "id": "mandarine",
+      "name": "Mandarine",
+      "category": "agrume"
+    },
+    {
+      "id": "menthe",
+      "name": "Menthe",
+      "category": "aromatique"
+    },
+    {
+      "id": "miel",
+      "name": "Miel",
+      "category": "gourmand"
+    },
+    {
+      "id": "mousse",
+      "name": "Mousse",
+      "category": "aromatique"
+    },
+    {
+      "id": "muguet",
+      "name": "Muguet",
+      "category": "floral"
+    },
+    {
+      "id": "mure_de_logan",
+      "name": "Mûre de Logan",
+      "category": "fruit"
+    },
+    {
+      "id": "musc",
+      "name": "Musc",
+      "category": "musc"
+    },
+    {
+      "id": "musc_blanc",
+      "name": "Musc blanc",
+      "category": "musc"
+    },
+    {
+      "id": "muscade",
+      "name": "Muscade",
+      "category": "epice"
+    },
+    {
+      "id": "muscs",
+      "name": "Muscs",
+      "category": "musc"
+    },
+    {
+      "id": "muscs_blancs",
+      "name": "Muscs blancs",
+      "category": "musc"
+    },
+    {
+      "id": "nagarmotha_cypriol",
+      "name": "Nagarmotha (cypriol)",
+      "category": "boise"
+    },
+    {
+      "id": "notes_boisees",
+      "name": "Notes boisées",
+      "category": "boise"
+    },
+    {
+      "id": "notes_fruitees",
+      "name": "Notes fruitées",
+      "category": "fruit"
+    },
+    {
+      "id": "oliban_encens",
+      "name": "Oliban (encens)",
+      "category": "resine_ambre"
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "category": "agrume"
+    },
+    {
+      "id": "orange_de_sicile",
+      "name": "Orange de Sicile",
+      "category": "agrume"
+    },
+    {
+      "id": "oud",
+      "name": "Oud",
+      "category": "oud"
+    },
+    {
+      "id": "oud_aquilaria",
+      "name": "Oud (Aquilaria)",
+      "category": "oud"
+    },
+    {
+      "id": "ozone",
+      "name": "Ozone",
+      "category": "aquatique_mineral"
+    },
+    {
+      "id": "palo_santo",
+      "name": "Palo santo",
+      "category": "boise"
+    },
+    {
+      "id": "pamplemousse",
+      "name": "Pamplemousse",
+      "category": "agrume"
+    },
+    {
+      "id": "patchouli",
+      "name": "Patchouli",
+      "category": "boise"
+    },
+    {
+      "id": "patchouli_de_sulawesi",
+      "name": "Patchouli de Sulawesi",
+      "category": "boise"
+    },
+    {
+      "id": "peche",
+      "name": "Pêche",
+      "category": "fruit"
+    },
+    {
+      "id": "petalia",
+      "name": "Petalia",
+      "category": "floral"
+    },
+    {
+      "id": "pivoine",
+      "name": "Pivoine",
+      "category": "floral"
+    },
+    {
+      "id": "pivoine_rouge",
+      "name": "Pivoine rouge",
+      "category": "floral"
+    },
+    {
+      "id": "poire",
+      "name": "Poire",
+      "category": "fruit"
+    },
+    {
+      "id": "pois_de_senteur",
+      "name": "Pois de senteur",
+      "category": "floral"
+    },
+    {
+      "id": "poivre_noir",
+      "name": "Poivre noir",
+      "category": "epice"
+    },
+    {
+      "id": "poivre_rose",
+      "name": "Poivre rose",
+      "category": "epice"
+    },
+    {
+      "id": "poivre_tellicherry",
+      "name": "Poivre Tellicherry",
+      "category": "epice"
+    },
+    {
+      "id": "poivre_timut",
+      "name": "Poivre timut",
+      "category": "epice"
+    },
+    {
+      "id": "pomme",
+      "name": "Pomme",
+      "category": "fruit"
+    },
+    {
+      "id": "poudre_de_coco",
+      "name": "Poudre de coco",
+      "category": "gourmand"
+    },
+    {
+      "id": "rhum",
+      "name": "Rhum",
+      "category": "gourmand"
+    },
+    {
+      "id": "rose",
+      "name": "Rose",
+      "category": "floral"
+    },
+    {
+      "id": "rose_de_bulgarie",
+      "name": "Rose de Bulgarie",
+      "category": "floral"
+    },
+    {
+      "id": "rose_de_damas",
+      "name": "Rose de Damas",
+      "category": "floral"
+    },
+    {
+      "id": "rose_de_mai",
+      "name": "Rose de mai",
+      "category": "floral"
+    },
+    {
+      "id": "rose_de_turquie",
+      "name": "Rose de Turquie",
+      "category": "floral"
+    },
+    {
+      "id": "sable_chaud",
+      "name": "Sable chaud",
+      "category": "aquatique_mineral"
+    },
+    {
+      "id": "safran",
+      "name": "Safran",
+      "category": "epice"
+    },
+    {
+      "id": "santal",
+      "name": "Santal",
+      "category": "boise"
+    },
+    {
+      "id": "santal_rouge",
+      "name": "Santal rouge",
+      "category": "boise"
+    },
+    {
+      "id": "seringat",
+      "name": "Seringat",
+      "category": "floral"
+    },
+    {
+      "id": "sesame",
+      "name": "Sésame",
+      "category": "gourmand"
+    },
+    {
+      "id": "tabac",
+      "name": "Tabac",
+      "category": "fume_tabac"
+    },
+    {
+      "id": "thym",
+      "name": "Thym",
+      "category": "aromatique"
+    },
+    {
+      "id": "tubereuse",
+      "name": "Tubéreuse",
+      "category": "floral"
+    },
+    {
+      "id": "vanille",
+      "name": "Vanille",
+      "category": "gourmand"
+    },
+    {
+      "id": "vanille_absolue",
+      "name": "Vanille absolue",
+      "category": "gourmand"
+    },
+    {
+      "id": "vanille_bourbon",
+      "name": "Vanille bourbon",
+      "category": "gourmand"
+    },
+    {
+      "id": "vanille_de_madagascar",
+      "name": "Vanille de Madagascar",
+      "category": "gourmand"
+    },
+    {
+      "id": "vanille_noire",
+      "name": "Vanille noire",
+      "category": "gourmand"
+    },
+    {
+      "id": "vetiver",
+      "name": "Vétiver",
+      "category": "boise"
+    },
+    {
+      "id": "vetiver_d_haiti",
+      "name": "Vétiver d'Haïti",
+      "category": "boise"
+    },
+    {
+      "id": "violette",
+      "name": "Violette",
+      "category": "floral"
+    },
+    {
+      "id": "ylang_ylang",
+      "name": "Ylang-ylang",
+      "category": "floral"
+    }
+  ],
+  "perfumes": [
+    {
+      "id": "paradigme",
+      "name": "Paradigme",
+      "house": "Prada",
+      "year": 2025,
+      "perfumers": [
+        "Marie Salamagne",
+        "Bruno Jovanovic",
+        "Nicolas Bonneville"
+      ],
+      "concentration": "EDP",
+      "owned_format": "original",
+      "family": "ambre",
+      "family_label": "Ambré boisé",
+      "accords": [
+        "ambré",
+        "boisé",
+        "frais",
+        "floral géranium"
+      ],
+      "notes": {
+        "top": [
+          "bergamote_de_calabre",
+          "muscs"
+        ],
+        "heart": [
+          "geranium_bourbon",
+          "geranium_rosat"
+        ],
+        "base": [
+          "baume_du_perou",
+          "benjoin",
+          "bois_de_gaiac"
+        ]
+      },
+      "pyramid_note": "Pyramide inversée officielle (la marque présente la base comme ouverture).",
+      "performance": {
+        "sillage": 2,
+        "sillage_label": "Modéré",
+        "longevity_h": {
+          "min": 6,
+          "max": 8
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 2,
+          "max": 3
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "daily",
+        "bureau",
+        "date",
+        "diner"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "rosevanilla",
+        "reason": "Embellisseur des fruités, floraux, gourmands et ouds denses : arrondit et sucre le fond."
+      },
+      "summary": "Ambré boisé propre et lisse, entre fraîcheur et chaleur. Couteau suisse : élégant, jamais envahissant."
+    },
+    {
+      "id": "myslf",
+      "name": "MYSLF",
+      "house": "YSL",
+      "year": 2023,
+      "perfumers": [
+        "Daniela Andrier",
+        "Antoine Maisondieu",
+        "Christophe Raynaud"
+      ],
+      "concentration": "EDP",
+      "owned_format": "original",
+      "family": "floral",
+      "family_label": "Boisé floral propre",
+      "accords": [
+        "floral fleur d'oranger",
+        "boisé",
+        "propre",
+        "musqué"
+      ],
+      "notes": {
+        "top": [
+          "bergamote_de_calabre"
+        ],
+        "heart": [
+          "fleur_d_oranger_de_tunisie"
+        ],
+        "base": [
+          "ambrofix_ambroxan",
+          "patchouli"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 2,
+        "sillage_label": "Modéré",
+        "longevity_h": {
+          "min": 6,
+          "max": 7
+        }
+      },
+      "application": {
+        "profile": "frais",
+        "sprays": {
+          "min": 3,
+          "max": 4
+        },
+        "zones": [
+          "torse",
+          "base du cou",
+          "nuque",
+          "vêtements"
+        ],
+        "rules": [
+          "zones larges",
+          "tissu/cheveux OK",
+          "réappliquer en journée si besoin"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "daily",
+        "bureau",
+        "date"
+      ],
+      "perception_risk": {
+        "level": "élevé",
+        "reason": "Base Ambrofix = ambroxan : ton nez le perd vite alors qu'il projette encore."
+      },
+      "recommended_oil": {
+        "oil": "whitemusk",
+        "reason": "Fixateur des frais et propres : prolonge la tenue, pose une peau propre."
+      },
+      "summary": "Fleur d'oranger propre et soyeuse sur fond boisé musqué. Signature daily moderne."
+    },
+    {
+      "id": "kirke",
+      "name": "Kirkè",
+      "house": "Tiziana Terenzi",
+      "year": 2015,
+      "perfumers": [
+        "Paolo Terenzi"
+      ],
+      "concentration": "Extrait",
+      "owned_format": "original",
+      "family": "fruite",
+      "family_label": "Chypré fruité",
+      "accords": [
+        "fruité tropical",
+        "musqué",
+        "poudré"
+      ],
+      "notes": {
+        "top": [
+          "fruit_de_la_passion",
+          "peche",
+          "framboise",
+          "cassis",
+          "poire",
+          "sable_chaud"
+        ],
+        "heart": [
+          "muguet"
+        ],
+        "base": [
+          "heliotrope",
+          "santal",
+          "vanille",
+          "patchouli",
+          "musc"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 3,
+        "sillage_label": "Explosif",
+        "longevity_h": {
+          "min": 8,
+          "max": 10
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 1,
+          "max": 2
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep"
+          ],
+          "seasons": [
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "soiree",
+        "plage",
+        "evenement"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "rosevanilla",
+        "reason": "Embellisseur des fruités, floraux, gourmands et ouds denses : arrondit et sucre le fond."
+      },
+      "summary": "Bombe fruitée tropicale, juteuse et solaire. Compliment-getter d'été, projection redoutable."
+    },
+    {
+      "id": "m724",
+      "name": "724",
+      "house": "Maison Francis Kurkdjian",
+      "year": 2022,
+      "perfumers": [
+        "Francis Kurkdjian"
+      ],
+      "concentration": "EDP",
+      "owned_format": "dupe",
+      "family": "propre",
+      "family_label": "Floral musqué propre",
+      "accords": [
+        "musqué",
+        "aldéhydé",
+        "floral blanc",
+        "propre"
+      ],
+      "notes": {
+        "top": [
+          "aldehydes",
+          "bergamote_de_calabre"
+        ],
+        "heart": [
+          "jasmin_d_egypte",
+          "pois_de_senteur",
+          "seringat"
+        ],
+        "base": [
+          "santal",
+          "musc_blanc"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 2,
+        "sillage_label": "Modéré",
+        "longevity_h": {
+          "min": 4,
+          "max": 6
+        }
+      },
+      "application": {
+        "profile": "frais",
+        "sprays": {
+          "min": 3,
+          "max": 4
+        },
+        "zones": [
+          "torse",
+          "base du cou",
+          "nuque",
+          "vêtements"
+        ],
+        "rules": [
+          "zones larges",
+          "tissu/cheveux OK",
+          "réappliquer en journée si besoin"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "daily",
+        "bureau",
+        "sport"
+      ],
+      "perception_risk": {
+        "level": "moyen",
+        "reason": "Muscs blancs : perception qui baisse après 1-2h."
+      },
+      "recommended_oil": {
+        "oil": "whitemusk",
+        "reason": "Fixateur des frais et propres : prolonge la tenue, pose une peau propre."
+      },
+      "summary": "Effet linge frais lumineux et aérien. Net, discret, passe-partout toute l'année."
+    },
+    {
+      "id": "babycat",
+      "name": "Babycat",
+      "house": "YSL (Le Vestiaire des Parfums)",
+      "year": 2022,
+      "perfumers": [
+        "Dominique Ropion"
+      ],
+      "concentration": "EDP",
+      "owned_format": "dupe",
+      "family": "ambre",
+      "family_label": "Ambré épicé cuiré",
+      "accords": [
+        "vanille",
+        "fumé",
+        "épicé",
+        "daim"
+      ],
+      "notes": {
+        "top": [
+          "poivre_rose",
+          "poivre_noir",
+          "elemi"
+        ],
+        "heart": [
+          "oliban_encens",
+          "safran"
+        ],
+        "base": [
+          "vanille_bourbon",
+          "cedre",
+          "daim"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 3,
+        "sillage_label": "Explosif",
+        "longevity_h": {
+          "min": 8,
+          "max": 10
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 1,
+          "max": 2
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "date",
+        "diner",
+        "soiree"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "rosevanilla",
+        "reason": "Embellisseur des fruités, floraux, gourmands et ouds denses : arrondit et sucre le fond."
+      },
+      "summary": "Vanille brute, fumée et cuirée, relevée de poivre et d'encens. Parfum de déclaration."
+    },
+    {
+      "id": "grandsoir",
+      "name": "Grand Soir",
+      "house": "Maison Francis Kurkdjian",
+      "year": 2016,
+      "perfumers": [
+        "Francis Kurkdjian"
+      ],
+      "concentration": "EDP",
+      "owned_format": "original",
+      "family": "ambre",
+      "family_label": "Ambré vanillé",
+      "accords": [
+        "ambré",
+        "vanillé",
+        "résineux",
+        "balsamique"
+      ],
+      "notes": {
+        "top": [
+          "labdanum",
+          "orange"
+        ],
+        "heart": [
+          "lavandin",
+          "feuille_de_cannelle",
+          "benjoin"
+        ],
+        "base": [
+          "ambre",
+          "vanille",
+          "feve_tonka",
+          "musc",
+          "cedre"
+        ]
+      },
+      "pyramid_note": "Pyramide de la fiche officielle MFK. Fragrantica n'a ni cannelle ni lavandin (seulement lavande + benjoin de Siam).",
+      "performance": {
+        "sillage": 4,
+        "sillage_label": "Bombe nucléaire",
+        "longevity_h": {
+          "min": 8,
+          "max": 12
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 1,
+          "max": 1
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            1,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "diner",
+        "evenement",
+        "mariage",
+        "soiree"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "merauke",
+        "reason": "Oud sous l'ambre vanillé : oriental plus profond (Rose Vanilla en alternative plus douce)."
+      },
+      "summary": "Ambre vanillé chaud et opulent. Gros aimant à compliments ; 1 spray remplit une pièce."
+    },
+    {
+      "id": "erbapura",
+      "name": "Erba Pura",
+      "house": "Xerjoff",
+      "year": 2019,
+      "perfumers": [
+        "Christian Carbonnel",
+        "Laura Santander"
+      ],
+      "concentration": "EDP",
+      "owned_format": "inconnu",
+      "family": "fruite",
+      "family_label": "Fruité ambré",
+      "accords": [
+        "fruité",
+        "sucré",
+        "musqué",
+        "agrumes"
+      ],
+      "notes": {
+        "top": [
+          "orange_de_sicile",
+          "bergamote_de_calabre",
+          "citron_de_sicile"
+        ],
+        "heart": [
+          "fruits_mediterraneens"
+        ],
+        "base": [
+          "musc_blanc",
+          "vanille_de_madagascar",
+          "ambre"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 4,
+        "sillage_label": "Bombe nucléaire",
+        "longevity_h": {
+          "min": 10,
+          "max": 12
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 1,
+          "max": 1
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0
+          ],
+          "best_months": [
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep"
+          ],
+          "seasons": [
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "soiree",
+        "plage",
+        "evenement"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "rosevanilla",
+        "reason": "Embellisseur des fruités, floraux, gourmands et ouds denses : arrondit et sucre le fond."
+      },
+      "summary": "Corbeille de fruits juteuse sur fond vanillé musqué. Performance nucléaire."
+    },
+    {
+      "id": "purpleaccento",
+      "name": "Purple Accento",
+      "house": "Xerjoff",
+      "year": 2025,
+      "perfumers": [
+        "Chris Maurice"
+      ],
+      "concentration": "EDP",
+      "owned_format": "original",
+      "family": "fruite",
+      "family_label": "Fruité ambré (oud)",
+      "accords": [
+        "fruité",
+        "floral",
+        "ambré",
+        "oud léger"
+      ],
+      "notes": {
+        "top": [
+          "bergamote",
+          "mandarine",
+          "jacinthe",
+          "ananas"
+        ],
+        "heart": [
+          "mure_de_logan",
+          "iris",
+          "jasmin",
+          "poivre_rose"
+        ],
+        "base": [
+          "ambre",
+          "musc",
+          "santal",
+          "vanille",
+          "oud"
+        ]
+      },
+      "pyramid_note": "Édition standard (collection Vibe, 2025). L'édition Crystal de 2021 n'a pas de bergamote.",
+      "performance": {
+        "sillage": 3,
+        "sillage_label": "Explosif",
+        "longevity_h": {
+          "min": 8,
+          "max": 10
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 1,
+          "max": 2
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "sep",
+            "oct",
+            "nov"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "daily",
+        "date",
+        "soiree"
+      ],
+      "perception_risk": {
+        "level": "moyen",
+        "reason": "Drydown linéaire musqué : tu le sens par intermittence, il reste présent pour les autres."
+      },
+      "recommended_oil": {
+        "oil": "rosevanilla",
+        "reason": "Embellisseur des fruités, floraux, gourmands et ouds denses : arrondit et sucre le fond."
+      },
+      "summary": "ADN Erba Pura en plus doux et plus chaud : ananas et mûre sur ambre-vanille-oud discret."
+    },
+    {
+      "id": "oudvoyager",
+      "name": "Oud Voyager",
+      "house": "Tom Ford",
+      "year": 2025,
+      "perfumers": [
+        "Dominique Ropion",
+        "Carlos Benaïm",
+        "Pascal Gaurin"
+      ],
+      "concentration": "EDP",
+      "owned_format": "dupe",
+      "family": "oud",
+      "family_label": "Oud floral",
+      "accords": [
+        "oud",
+        "rose/pivoine",
+        "épicé",
+        "poudré"
+      ],
+      "notes": {
+        "top": [
+          "geranium",
+          "poivre_rose",
+          "agrumes"
+        ],
+        "heart": [
+          "pivoine_rouge",
+          "cardamome",
+          "safran"
+        ],
+        "base": [
+          "oud",
+          "cypriol",
+          "patchouli",
+          "vetiver",
+          "musc"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 2,
+        "sillage_label": "Modéré",
+        "longevity_h": {
+          "min": 7,
+          "max": 9
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 2,
+          "max": 3
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "bureau",
+        "diner",
+        "evenement",
+        "mariage"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "merauke",
+        "reason": "Renforce l'oud discret : version plus authentique et masculine."
+      },
+      "summary": "Oud-rose poudré, propre et polyvalent. Le seul de tes ouds portable au bureau."
+    },
+    {
+      "id": "oudmaracuja",
+      "name": "Oud Maracujá",
+      "house": "Maison Crivelli",
+      "year": 2023,
+      "perfumers": [
+        "Jordi Fernández"
+      ],
+      "concentration": "Extrait (32%)",
+      "owned_format": "inconnu",
+      "family": "oud",
+      "family_label": "Oud fruité cuiré",
+      "accords": [
+        "oud",
+        "fruité passion",
+        "cuir",
+        "safran"
+      ],
+      "notes": {
+        "top": [
+          "fruit_de_la_passion",
+          "notes_fruitees",
+          "safran",
+          "rose_de_turquie"
+        ],
+        "heart": [
+          "oud",
+          "benjoin",
+          "patchouli"
+        ],
+        "base": [
+          "cuir",
+          "akigalawood",
+          "ambre",
+          "vanille",
+          "labdanum"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 3,
+        "sillage_label": "Explosif",
+        "longevity_h": {
+          "min": 12,
+          "max": 14
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 1,
+          "max": 2
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "soiree",
+        "evenement"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "rosevanilla",
+        "reason": "Embellisseur des fruités, floraux, gourmands et ouds denses : arrondit et sucre le fond."
+      },
+      "summary": "Contraste passion-oud sur cuir dense. Extrait très tenace, survit à la douche."
+    },
+    {
+      "id": "kayan",
+      "name": "Kayan",
+      "house": "Le Bonheur Perfumes",
+      "year": 2024,
+      "perfumers": [],
+      "concentration": "EDP",
+      "owned_format": "inconnu",
+      "family": "oud",
+      "family_label": "Oud oriental gourmand",
+      "accords": [
+        "oud",
+        "safran",
+        "caramel",
+        "cuir"
+      ],
+      "notes": {
+        "top": [
+          "poivre_rose",
+          "oud",
+          "safran",
+          "bergamote"
+        ],
+        "heart": [
+          "cuir",
+          "caramel"
+        ],
+        "base": [
+          "patchouli",
+          "ambre_gris",
+          "mousse",
+          "musc"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 3,
+        "sillage_label": "Explosif",
+        "longevity_h": {
+          "min": 8,
+          "max": 10
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 1,
+          "max": 2
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "soiree",
+        "diner"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "rosevanilla",
+        "reason": "Embellisseur des fruités, floraux, gourmands et ouds denses : arrondit et sucre le fond."
+      },
+      "summary": "ADN Khamrah : oud, safran, caramel, cuir. Chaleureux, épicé, gourmand."
+    },
+    {
+      "id": "vanillapowder",
+      "name": "Vanilla Powder",
+      "house": "Matière Première",
+      "year": 2023,
+      "perfumers": [
+        "Aurélien Guichard"
+      ],
+      "concentration": "EDP",
+      "owned_format": "dupe",
+      "family": "gourmand",
+      "family_label": "Gourmand vanille-coco",
+      "accords": [
+        "vanille",
+        "coco",
+        "poudré",
+        "crémeux"
+      ],
+      "notes": {
+        "top": [
+          "poudre_de_coco",
+          "heliotrope"
+        ],
+        "heart": [
+          "vanille_de_madagascar"
+        ],
+        "base": [
+          "vanille_absolue",
+          "musc_blanc",
+          "musc",
+          "palo_santo",
+          "coco",
+          "lactones"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 4,
+        "sillage_label": "Bombe nucléaire",
+        "longevity_h": {
+          "min": 12,
+          "max": 16
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 1,
+          "max": 1
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "cocooning",
+        "date",
+        "daily"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "rosevanilla",
+        "reason": "Ajoute une facette rosée : vanille plus complexe, moins linéaire."
+      },
+      "summary": "Vanille-coco poudrée, sèche et chic. Ton rehausseur de layering universel."
+    },
+    {
+      "id": "pacificchill",
+      "name": "Pacific Chill",
+      "house": "Louis Vuitton",
+      "year": 2023,
+      "perfumers": [
+        "Jacques Cavallier Belletrud"
+      ],
+      "concentration": "EDP (Les Colognes)",
+      "owned_format": "inconnu",
+      "family": "frais",
+      "family_label": "Aromatique fruité frais",
+      "accords": [
+        "vert",
+        "agrumes",
+        "fruité",
+        "aromatique"
+      ],
+      "notes": {
+        "top": [
+          "cedrat",
+          "orange",
+          "citron",
+          "menthe",
+          "cassis",
+          "coriandre"
+        ],
+        "heart": [
+          "abricot",
+          "basilic",
+          "graine_de_carotte",
+          "rose_de_mai"
+        ],
+        "base": [
+          "figue",
+          "datte",
+          "ambrette"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 2,
+        "sillage_label": "Modéré",
+        "longevity_h": {
+          "min": 6,
+          "max": 8
+        }
+      },
+      "application": {
+        "profile": "frais",
+        "sprays": {
+          "min": 3,
+          "max": 4
+        },
+        "zones": [
+          "torse",
+          "base du cou",
+          "nuque",
+          "vêtements"
+        ],
+        "rules": [
+          "zones larges",
+          "tissu/cheveux OK",
+          "réappliquer en journée si besoin"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day"
+        ],
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout"
+          ],
+          "seasons": [
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "daily",
+        "plage",
+        "bureau",
+        "voyage"
+      ],
+      "perception_risk": {
+        "level": "moyen",
+        "reason": "Frais volatil : perception qui chute vite."
+      },
+      "recommended_oil": {
+        "oil": "whitemusk",
+        "reason": "Fixateur des frais et propres : prolonge la tenue, pose une peau propre."
+      },
+      "summary": "Effet detox smoothie : vert, fruité, touche concombre. Daily driver de chaleur."
+    },
+    {
+      "id": "afternoonswim",
+      "name": "Afternoon Swim",
+      "house": "Louis Vuitton",
+      "year": 2019,
+      "perfumers": [
+        "Jacques Cavallier Belletrud"
+      ],
+      "concentration": "EDP (Les Colognes)",
+      "owned_format": "inconnu",
+      "family": "frais",
+      "family_label": "Agrumes aquatique",
+      "accords": [
+        "agrumes",
+        "aquatique",
+        "salin"
+      ],
+      "notes": {
+        "top": [
+          "orange_de_sicile",
+          "mandarine",
+          "bergamote"
+        ],
+        "heart": [],
+        "base": [
+          "gingembre",
+          "ambre_gris"
+        ]
+      },
+      "pyramid_note": "Pyramide officielle à deux étages seulement (pas de notes de cœur).",
+      "performance": {
+        "sillage": 1,
+        "sillage_label": "Faible",
+        "longevity_h": {
+          "min": 2,
+          "max": 3
+        }
+      },
+      "application": {
+        "profile": "frais",
+        "sprays": {
+          "min": 4,
+          "max": 6
+        },
+        "zones": [
+          "torse",
+          "base du cou",
+          "nuque",
+          "vêtements"
+        ],
+        "rules": [
+          "zones larges",
+          "tissu/cheveux OK",
+          "réappliquer en journée si besoin"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day"
+        ],
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout"
+          ],
+          "seasons": [
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "plage",
+        "daily",
+        "voyage"
+      ],
+      "perception_risk": {
+        "level": "élevé",
+        "reason": "Agrumes très volatils : tenue objectivement courte, réappliquer ou vaporiser sur tissu."
+      },
+      "recommended_oil": {
+        "oil": "whitemusk",
+        "reason": "Fixe les agrumes fugaces : règle enfin sa tenue."
+      },
+      "summary": "Shot de vitamine C salin. Sublime mais fugace : le maillon faible en tenue."
+    },
+    {
+      "id": "qurashiblue",
+      "name": "Qurashi Blend Blue",
+      "house": "Abdul Samad Al Qurashi",
+      "year": 2025,
+      "perfumers": [],
+      "concentration": "EDP",
+      "owned_format": "inconnu",
+      "family": "oud",
+      "family_label": "Frais boisé / oud",
+      "accords": [
+        "fruité ananas",
+        "aromatique",
+        "oud",
+        "encens"
+      ],
+      "notes": {
+        "top": [
+          "ananas",
+          "bergamote",
+          "mandarine"
+        ],
+        "heart": [
+          "fleur_d_oranger_marocaine",
+          "lavande",
+          "encens"
+        ],
+        "base": [
+          "oud",
+          "musc",
+          "feve_tonka"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 4,
+        "sillage_label": "Bombe nucléaire",
+        "longevity_h": {
+          "min": 10,
+          "max": 12
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 1,
+          "max": 1
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "evenement",
+        "mariage",
+        "majlis",
+        "date"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "merauke",
+        "reason": "Ancre et densifie les boisés et les chauds ; corrige ta perte de perception sur les bases ambroxan."
+      },
+      "summary": "ADN Qurashi Blend / Blue Sapphire : frais-ananas dessus, oud chaud dessous. Sillage de bête."
+    },
+    {
+      "id": "attrapereves",
+      "name": "Attrape-Rêves",
+      "house": "Louis Vuitton",
+      "year": 2018,
+      "perfumers": [
+        "Jacques Cavallier Belletrud"
+      ],
+      "concentration": "EDP",
+      "owned_format": "dupe",
+      "family": "floral",
+      "family_label": "Floral fruité (cacao)",
+      "accords": [
+        "floral pivoine-rose",
+        "fruité litchi",
+        "cacao",
+        "patchouli"
+      ],
+      "notes": {
+        "top": [
+          "litchi",
+          "bergamote",
+          "gingembre"
+        ],
+        "heart": [
+          "pivoine",
+          "rose_de_turquie",
+          "cacao"
+        ],
+        "base": [
+          "patchouli"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 3,
+        "sillage_label": "Explosif",
+        "longevity_h": {
+          "min": 7,
+          "max": 10
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 1,
+          "max": 2
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "daily",
+        "date",
+        "diner"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "rosevanilla",
+        "reason": "Embellisseur des fruités, floraux, gourmands et ouds denses : arrondit et sucre le fond."
+      },
+      "summary": "Fruitchouli : litchi et pivoine sur cacao-patchouli. Frais-floral sur ta peau, gourmand en layering le soir."
+    },
+    {
+      "id": "safariextreme",
+      "name": "Safari Extreme",
+      "house": "Abdul Samad Al Qurashi",
+      "year": null,
+      "perfumers": [],
+      "concentration": "EDP",
+      "owned_format": "original + dupe",
+      "family": "oud",
+      "family_label": "Oriental floral cuiré",
+      "accords": [
+        "floral opulent",
+        "cuir-daim",
+        "safran",
+        "vanille poudrée"
+      ],
+      "notes": {
+        "top": [
+          "framboise",
+          "safran",
+          "mandarine",
+          "bergamote",
+          "muguet",
+          "lilas",
+          "magnolia",
+          "fleur_de_tilleul",
+          "thym"
+        ],
+        "heart": [
+          "peche",
+          "oliban_encens",
+          "ylang_ylang",
+          "violette",
+          "rose_de_bulgarie",
+          "jasmin",
+          "tubereuse",
+          "muscade",
+          "illet"
+        ],
+        "base": [
+          "vanille",
+          "santal",
+          "notes_boisees",
+          "cuir",
+          "daim",
+          "iris",
+          "ambre",
+          "musc",
+          "clou_de_girofle"
+        ]
+      },
+      "pyramid_note": "Pyramide Fragrantica. Oud non listé officiellement mais perçu discrètement par de nombreux porteurs. Reformulation probable (nouveau flacon 90 ml).",
+      "performance": {
+        "sillage": 2,
+        "sillage_label": "Modéré",
+        "longevity_h": {
+          "min": 6,
+          "max": 8
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 3,
+          "max": 4
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "evenement",
+        "majlis",
+        "soiree",
+        "mariage"
+      ],
+      "perception_risk": {
+        "level": "moyen",
+        "reason": "Fond iris-daim-musc : l'original te paraît plus faible que ton dupe (plus chargé en aromachimiques)."
+      },
+      "recommended_oil": {
+        "oil": "merauke",
+        "reason": "Densifie le cuir floral safrané de l'original (Rose Vanilla si tu le veux plus doux)."
+      },
+      "summary": "Flagship ASQ : bouquet floral riche sur cuir-daim, safran, vanille poudrée. Original = finesse de proximité (projection ~1h puis près de la peau), dupe = puissance."
+    },
+    {
+      "id": "maleali",
+      "name": "Maleali",
+      "house": "SAFF & Co.",
+      "year": 2023,
+      "perfumers": [
+        "Nanako Ogi"
+      ],
+      "concentration": "Extrait",
+      "owned_format": "original",
+      "family": "boise",
+      "family_label": "Boisé aromatique sec",
+      "accords": [
+        "boisé",
+        "terreux",
+        "épicé",
+        "poudré"
+      ],
+      "notes": {
+        "top": [
+          "genevrier",
+          "poivre_tellicherry"
+        ],
+        "heart": [
+          "palo_santo",
+          "santal_rouge"
+        ],
+        "base": [
+          "nagarmotha_cypriol",
+          "patchouli_de_sulawesi"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 2,
+        "sillage_label": "Modéré",
+        "longevity_h": {
+          "min": 7,
+          "max": 9
+        }
+      },
+      "application": {
+        "profile": "frais",
+        "sprays": {
+          "min": 3,
+          "max": 4
+        },
+        "zones": [
+          "torse",
+          "base du cou",
+          "nuque",
+          "vêtements"
+        ],
+        "rules": [
+          "zones larges",
+          "tissu/cheveux OK",
+          "réappliquer en journée si besoin"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "daily",
+        "bureau",
+        "voyage"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": "Pas d'ambroxan : reste perceptible pour toi, excellente base de layering."
+      },
+      "recommended_oil": {
+        "oil": "merauke",
+        "reason": "Boisé terreux sur oud naturel : profondeur maximale."
+      },
+      "summary": "Boisé sec, terreux et poudré (type Santal 33 plus bold). Tient des jours sur le tissu."
+    },
+    {
+      "id": "solaris",
+      "name": "Solaris",
+      "house": "SAFF & Co.",
+      "year": 2023,
+      "perfumers": [
+        "Sandra Casagrande"
+      ],
+      "concentration": "Extrait",
+      "owned_format": "original",
+      "family": "floral",
+      "family_label": "Floral boisé poudré",
+      "accords": [
+        "iris-violette",
+        "boisé",
+        "vétiver",
+        "ambré"
+      ],
+      "notes": {
+        "top": [
+          "bergamote",
+          "mandarine",
+          "feuilles_de_violette"
+        ],
+        "heart": [
+          "iris_orris",
+          "freesia",
+          "cedre"
+        ],
+        "base": [
+          "vetiver_d_haiti",
+          "ambre",
+          "feve_tonka"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 2,
+        "sillage_label": "Modéré",
+        "longevity_h": {
+          "min": 5,
+          "max": 7
+        }
+      },
+      "application": {
+        "profile": "frais",
+        "sprays": {
+          "min": 3,
+          "max": 4
+        },
+        "zones": [
+          "torse",
+          "base du cou",
+          "nuque",
+          "vêtements"
+        ],
+        "rules": [
+          "zones larges",
+          "tissu/cheveux OK",
+          "réappliquer en journée si besoin"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "daily",
+        "bureau",
+        "sport",
+        "date"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "whitemusk",
+        "reason": "Fixateur des frais et propres : prolonge la tenue, pose une peau propre."
+      },
+      "summary": "Poudré-boisé sec et élégant ; ouverture fraîche puis drydown ambré luxueux. Choix n°1 padel."
+    },
+    {
+      "id": "raenira",
+      "name": "Rae Nira",
+      "house": "SAFF & Co.",
+      "year": 2025,
+      "perfumers": [],
+      "concentration": "Extrait",
+      "owned_format": "original",
+      "family": "ambre",
+      "family_label": "Oriental boisé ambré",
+      "accords": [
+        "aromatique",
+        "floral miellé",
+        "balsamique"
+      ],
+      "notes": {
+        "top": [
+          "cajeput",
+          "bigarade",
+          "lavande"
+        ],
+        "heart": [
+          "jasmin_sambac",
+          "calypsone_accord_marin",
+          "immortelle"
+        ],
+        "base": [
+          "baume_de_tolu",
+          "ambre",
+          "cachemire"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 2,
+        "sillage_label": "Modéré",
+        "longevity_h": {
+          "min": 7,
+          "max": 9
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 2,
+          "max": 3
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "sep",
+            "oct",
+            "nov"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "daily",
+        "cocooning"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "rosevanilla",
+        "reason": "Embellisseur des fruités, floraux, gourmands et ouds denses : arrondit et sucre le fond."
+      },
+      "summary": "Cajeput et lavande sur immortelle miellée et baume de Tolu. Réconfortant, mi-saison."
+    },
+    {
+      "id": "ostara",
+      "name": "Ostara",
+      "house": "SAFF & Co.",
+      "year": 2022,
+      "perfumers": [
+        "Nanako Ogi"
+      ],
+      "concentration": "Extrait",
+      "owned_format": "original",
+      "family": "fruite",
+      "family_label": "Fruité floral chypré",
+      "accords": [
+        "fruité",
+        "musqué",
+        "patchouli"
+      ],
+      "notes": {
+        "top": [
+          "framboise",
+          "poire",
+          "fruit_de_la_passion"
+        ],
+        "heart": [
+          "bourgeons_de_cassis",
+          "muguet"
+        ],
+        "base": [
+          "heliotrope",
+          "ambre",
+          "patchouli"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 3,
+        "sillage_label": "Explosif",
+        "longevity_h": {
+          "min": 8,
+          "max": 10
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 1,
+          "max": 2
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep"
+          ],
+          "seasons": [
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "soiree",
+        "plage"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "rosevanilla",
+        "reason": "Embellisseur des fruités, floraux, gourmands et ouds denses : arrondit et sucre le fond."
+      },
+      "summary": "Fruité vibrant sur musc-ambre-patchouli puissant. Quasi-doublon de Kirkè."
+    },
+    {
+      "id": "boisimperial",
+      "name": "Bois Impérial",
+      "house": "Essential Parfums",
+      "year": 2020,
+      "perfumers": [
+        "Quentin Bisch"
+      ],
+      "concentration": "EDP",
+      "owned_format": "original",
+      "family": "boise",
+      "family_label": "Boisé aromatique vert",
+      "accords": [
+        "boisé",
+        "vert basilic",
+        "poivré",
+        "propre"
+      ],
+      "notes": {
+        "top": [
+          "basilic_thai",
+          "poivre_timut",
+          "pamplemousse"
+        ],
+        "heart": [
+          "akigalawood",
+          "georgywood",
+          "petalia"
+        ],
+        "base": [
+          "vetiver_d_haiti",
+          "patchouli",
+          "ambrofix_ambroxan"
+        ]
+      },
+      "pyramid_note": "Pas de pyramide officielle (liste à plat) : répartition par volatilité. L'akigalawood est le cœur du concept selon Quentin Bisch.",
+      "performance": {
+        "sillage": 3,
+        "sillage_label": "Explosif",
+        "longevity_h": {
+          "min": 8,
+          "max": 10
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 2,
+          "max": 3
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "daily",
+        "bureau",
+        "mariage",
+        "sport"
+      ],
+      "perception_risk": {
+        "level": "élevé",
+        "reason": "Base ambroxan : tu le perds en ~1h alors que les avis le jugent très diffusif. Corrigé par l'huile Merauke dessous (combo validé)."
+      },
+      "recommended_oil": {
+        "oil": "merauke",
+        "reason": "COMBO VALIDÉ : l'oud naturel ancre le boisé et compense l'ambroxan que tu ne perçois plus."
+      },
+      "summary": "Boisé lumineux minimaliste de Quentin Bisch. Propre, sophistiqué, très polyvalent."
+    },
+    {
+      "id": "ambresupermassive",
+      "name": "Ambre Supermassive",
+      "house": "Les Eaux Primordiales",
+      "year": 2024,
+      "perfumers": [
+        "Arnaud Poulain",
+        "Studio Flair"
+      ],
+      "concentration": "Extrait",
+      "owned_format": "original",
+      "family": "ambre",
+      "family_label": "Ambré boozy tabac",
+      "accords": [
+        "ambré",
+        "boozy rhum",
+        "tabac",
+        "fruité",
+        "miel"
+      ],
+      "notes": {
+        "top": [
+          "peche",
+          "pomme",
+          "cannelle",
+          "ananas",
+          "sesame"
+        ],
+        "heart": [
+          "rose",
+          "heliotrope",
+          "miel",
+          "cardamome",
+          "rhum"
+        ],
+        "base": [
+          "vanille_noire",
+          "ambre",
+          "safran",
+          "tabac",
+          "musc"
+        ]
+      },
+      "pyramid_note": "CORRIGÉ : l'ancienne version de l'app avait une pyramide approximative. Celle-ci est la pyramide officielle.",
+      "performance": {
+        "sillage": 3,
+        "sillage_label": "Explosif",
+        "longevity_h": {
+          "min": 10,
+          "max": 12
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 1,
+          "max": 2
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "diner",
+        "soiree",
+        "cocooning"
+      ],
+      "perception_risk": {
+        "level": "faible",
+        "reason": null
+      },
+      "recommended_oil": {
+        "oil": "merauke",
+        "reason": "Ancre et densifie les boisés et les chauds ; corrige ta perte de perception sur les bases ambroxan."
+      },
+      "summary": "Ambre liquoreux fruité-épicé : rhum, miel, tabac, vanille noire. Chevauche Grand Soir en plus sombre."
+    },
+    {
+      "id": "muscnurasana",
+      "name": "Musc Nurāsana",
+      "house": "Maison Crivelli",
+      "year": 2026,
+      "perfumers": [
+        "Gaël Montero"
+      ],
+      "concentration": "Extrait (32%)",
+      "owned_format": "original",
+      "family": "propre",
+      "family_label": "Musc floral rose-encens",
+      "accords": [
+        "musqué",
+        "rose",
+        "encens",
+        "frais épicé"
+      ],
+      "notes": {
+        "top": [
+          "bergamote",
+          "cardamome_absolue",
+          "gingembre"
+        ],
+        "heart": [
+          "rose_de_damas",
+          "oliban_encens"
+        ],
+        "base": [
+          "muscs",
+          "feve_tonka",
+          "ciste",
+          "baume_de_sapin"
+        ]
+      },
+      "pyramid_note": "Pyramide officielle. Les critiques relèvent aussi de l'Iso E Super / bois ambrés non listés.",
+      "performance": {
+        "sillage": 3,
+        "sillage_label": "Explosif",
+        "longevity_h": {
+          "min": 8,
+          "max": 12
+        }
+      },
+      "application": {
+        "profile": "intense",
+        "sprays": {
+          "min": 1,
+          "max": 2
+        },
+        "zones": [
+          "cou",
+          "derrière les oreilles",
+          "pli du coude"
+        ],
+        "rules": [
+          "peau nue",
+          "ne pas frotter"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day",
+          "evening"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "daily",
+        "bureau",
+        "sport",
+        "voyage"
+      ],
+      "perception_risk": {
+        "level": "élevé",
+        "reason": "Muscs + Iso E Super (relevé par les critiques) : même piège que MYSLF / Bois Impérial."
+      },
+      "recommended_oil": {
+        "oil": "merauke",
+        "reason": "Même logique que Bois Impérial : tu le sens encore à 4h malgré les muscs."
+      },
+      "summary": "Voile rose-musc lumineux sur fond d'encens. Portable 12 mois/12, même en canicule."
+    },
+    {
+      "id": "silkstone",
+      "name": "Silk Stone",
+      "house": "H&M",
+      "year": 2026,
+      "perfumers": [],
+      "concentration": "EDP (50 ml)",
+      "owned_format": "original",
+      "family": "propre",
+      "family_label": "Floral aldéhydé propre",
+      "accords": [
+        "aldéhydé",
+        "floral blanc",
+        "musqué",
+        "propre"
+      ],
+      "notes": {
+        "top": [
+          "aldehydes",
+          "ozone",
+          "citron"
+        ],
+        "heart": [
+          "muguet",
+          "magnolia",
+          "pivoine"
+        ],
+        "base": [
+          "santal",
+          "muscs_blancs"
+        ]
+      },
+      "pyramid_note": null,
+      "performance": {
+        "sillage": 2,
+        "sillage_label": "Modéré",
+        "longevity_h": {
+          "min": 6,
+          "max": 8
+        }
+      },
+      "application": {
+        "profile": "frais",
+        "sprays": {
+          "min": 3,
+          "max": 4
+        },
+        "zones": [
+          "torse",
+          "base du cou",
+          "nuque",
+          "vêtements"
+        ],
+        "rules": [
+          "zones larges",
+          "tissu/cheveux OK",
+          "réappliquer en journée si besoin"
+        ]
+      },
+      "wear": {
+        "time_of_day": [
+          "day"
+        ],
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov"
+          ],
+          "seasons": [
+            "hiver",
+            "printemps",
+            "ete",
+            "automne"
+          ]
+        }
+      },
+      "occasions": [
+        "daily",
+        "bureau",
+        "sport"
+      ],
+      "perception_risk": {
+        "level": "moyen",
+        "reason": "Muscs blancs + aldéhydes : perception qui s'estompe vite."
+      },
+      "recommended_oil": {
+        "oil": "whitemusk",
+        "reason": "Fixateur des frais et propres : prolonge la tenue, pose une peau propre."
+      },
+      "summary": "Quasi-clone de Byredo Blanche, tenue supérieure selon les testeurs. Meilleur rapport qualité/prix."
+    }
+  ],
+  "oils": [
+    {
+      "id": "whitemusk",
+      "name": "White Musk",
+      "type": "huile corporelle parfumée",
+      "source": "à préciser (artisan / huile de dupe)",
+      "notes": {
+        "top": [],
+        "heart": [],
+        "base": [
+          "musc_blanc"
+        ]
+      },
+      "pyramid_note": "Composition exacte non publiée : profil musc blanc propre.",
+      "profile": "Musc blanc propre, effet peau. Ancre les frais sans les réchauffer.",
+      "role": "Fixateur des frais et propres : prolonge la tenue, pose une peau propre.",
+      "dosage": {
+        "drops": {
+          "min": 1,
+          "max": 2
+        },
+        "method": "Sur points de pulsation, laisser absorber 1-2 min, puis vaporiser le parfum par-dessus."
+      },
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      },
+      "recommended_for": [
+        "afternoonswim",
+        "pacificchill",
+        "m724",
+        "myslf",
+        "solaris",
+        "silkstone"
+      ]
+    },
+    {
+      "id": "rosevanilla",
+      "name": "Rose Vanilla",
+      "type": "huile de parfum (dupe artisan)",
+      "source": "Inspiration Mancera Roses Vanille (Pierre Montale, 2011)",
+      "notes": {
+        "top": [
+          "citron_d_italie"
+        ],
+        "heart": [
+          "rose_de_turquie"
+        ],
+        "base": [
+          "vanille",
+          "musc_blanc",
+          "cedre"
+        ]
+      },
+      "pyramid_note": null,
+      "profile": "Rose-vanille sucrée, effet loukoum. Embellit et arrondit.",
+      "role": "Embellisseur des fruités, floraux, gourmands et ouds denses : arrondit et sucre le fond.",
+      "dosage": {
+        "drops": {
+          "min": 1,
+          "max": 2
+        },
+        "method": "Sur points de pulsation, laisser absorber 1-2 min, puis vaporiser le parfum par-dessus."
+      },
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      },
+      "recommended_for": [
+        "paradigme",
+        "erbapura",
+        "purpleaccento",
+        "kirke",
+        "ostara",
+        "raenira",
+        "oudmaracuja",
+        "kayan",
+        "vanillapowder",
+        "babycat",
+        "attrapereves"
+      ]
+    },
+    {
+      "id": "merauke",
+      "name": "Huile d'oud Merauke",
+      "type": "huile d'oud pure (dehn al oud)",
+      "source": "Merauke, Papouasie (Indonésie)",
+      "notes": {
+        "top": [],
+        "heart": [],
+        "base": [
+          "oud_aquilaria"
+        ]
+      },
+      "pyramid_note": "Matière brute : profil terreux, résineux et fumé (parfois facette verte-camphrée selon les lots).",
+      "profile": "Oud terreux, résineux et fumé. Molécules naturelles lourdes : reste perceptible pour toi là où l'ambroxan disparaît.",
+      "role": "Ancre et densifie les boisés et les chauds ; corrige ta perte de perception sur les bases ambroxan.",
+      "dosage": {
+        "drops": {
+          "min": 1,
+          "max": 1
+        },
+        "method": "Sur points de pulsation, laisser absorber 1-2 min, puis vaporiser le parfum par-dessus."
+      },
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      },
+      "recommended_for": [
+        "boisimperial",
+        "maleali",
+        "muscnurasana",
+        "oudvoyager",
+        "qurashiblue",
+        "grandsoir",
+        "ambresupermassive",
+        "safariextreme"
+      ]
+    }
+  ],
+  "layerings": [
+    {
+      "id": "merauke_boisimperial",
+      "status": "validé",
+      "signature": true,
+      "goal": "profondeur + perception",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "merauke",
+          "role": "fond",
+          "dose": "1 goutte"
+        },
+        {
+          "type": "perfume",
+          "ref": "boisimperial",
+          "role": "dessus",
+          "dose": "2-3 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day",
+        "evening"
+      ],
+      "rationale": "Oud naturel sous boisé synthétique : densité, et molécules lourdes que ton nez perçoit toute la journée.",
+      "dosage": "1 goutte, laisser absorber 1-2 min, puis vaporiser.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "merauke_muscnurasana",
+      "status": "à tester",
+      "signature": false,
+      "goal": "profondeur + perception",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "merauke",
+          "role": "fond",
+          "dose": "1 goutte"
+        },
+        {
+          "type": "perfume",
+          "ref": "muscnurasana",
+          "role": "dessus",
+          "dose": "2-3 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day",
+        "evening"
+      ],
+      "rationale": "Rose-encens sur oud : plus oriental, et tu gardes la perception malgré les muscs.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "merauke_maleali",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "profondeur",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "merauke",
+          "role": "fond",
+          "dose": "1 goutte"
+        },
+        {
+          "type": "perfume",
+          "ref": "maleali",
+          "role": "dessus",
+          "dose": "2-3 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Double boisé terreux : sombre, minéral, hivernal.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "merauke_oudvoyager",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "authenticité",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "merauke",
+          "role": "fond",
+          "dose": "1 goutte"
+        },
+        {
+          "type": "perfume",
+          "ref": "oudvoyager",
+          "role": "dessus",
+          "dose": "2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Vrai oud sous oud-rose poudré : plus masculin et crédible.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "merauke_grandsoir",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "profondeur",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "merauke",
+          "role": "fond",
+          "dose": "1 goutte"
+        },
+        {
+          "type": "perfume",
+          "ref": "grandsoir",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Oud terreux sous ambre vanillé : oriental majestueux.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            1,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "whitemusk_afternoonswim",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "tenue",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "whitemusk",
+          "role": "fond",
+          "dose": "2 gouttes"
+        },
+        {
+          "type": "perfume",
+          "ref": "afternoonswim",
+          "role": "dessus",
+          "dose": "4-6 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day"
+      ],
+      "rationale": "Le musc fixe les agrumes volatils.",
+      "wear": {
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout"
+          ]
+        }
+      }
+    },
+    {
+      "id": "whitemusk_silkstone",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "tenue",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "whitemusk",
+          "role": "fond",
+          "dose": "2 gouttes"
+        },
+        {
+          "type": "perfume",
+          "ref": "silkstone",
+          "role": "dessus",
+          "dose": "3-4 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day"
+      ],
+      "rationale": "Prolonge le floral propre, fond peau.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov"
+          ]
+        }
+      }
+    },
+    {
+      "id": "whitemusk_m724",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "tenue",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "whitemusk",
+          "role": "fond",
+          "dose": "2 gouttes"
+        },
+        {
+          "type": "perfume",
+          "ref": "m724",
+          "role": "dessus",
+          "dose": "3 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day"
+      ],
+      "rationale": "Renforce le propre et la tenue.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rosevanilla_grandsoir",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "richesse sans volume",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "rosevanilla",
+          "role": "fond",
+          "dose": "1 goutte"
+        },
+        {
+          "type": "perfume",
+          "ref": "grandsoir",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Enrichit et allonge sans ajouter de projection : idéal espaces clos (mariage).",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            1,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rosevanilla_attrapereves",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "gourmand",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "rosevanilla",
+          "role": "fond",
+          "dose": "1 goutte"
+        },
+        {
+          "type": "perfume",
+          "ref": "attrapereves",
+          "role": "dessus",
+          "dose": "1-2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Amplifie rose et vanille : rose-cacao-vanille dense.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "sep",
+            "oct",
+            "nov"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rosevanilla_safariextreme",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "présence",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "rosevanilla",
+          "role": "fond",
+          "dose": "1 goutte"
+        },
+        {
+          "type": "perfume",
+          "ref": "safariextreme",
+          "role": "dessus",
+          "dose": "3-4 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Enrichit et fixe l'original sans le dénaturer (+ spray sur le col).",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rosevanilla_oudmaracuja",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "arrondir",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "rosevanilla",
+          "role": "fond",
+          "dose": "1 goutte"
+        },
+        {
+          "type": "perfume",
+          "ref": "oudmaracuja",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Sucre et arrondit le cuir-passion.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_oudvoyager",
+      "status": "recommandé",
+      "signature": true,
+      "goal": "gourmand oudé",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "oudvoyager",
+          "role": "dessus",
+          "dose": "1-2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Vanille-coco crémeuse sous oud-rose : oud gourmand pelucheux.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_oudmaracuja",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "arrondir",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "oudmaracuja",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Arrondit cuir et passion : oud fruité crémeux.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_babycat",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "adoucir",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "babycat",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Calme poivre et encens : vanille fumée veloutée.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_kayan",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "gourmand oudé",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "kayan",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Caramel-oud + vanille : gourmand enveloppant.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_safariextreme",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "adoucir",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "safariextreme",
+          "role": "dessus",
+          "dose": "2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Adoucit le cuir floral safrané.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_ambresupermassive",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "adoucir",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "ambresupermassive",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Arrondit tabac et rhum : ambré gourmand doux.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "maleali_oudvoyager",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "sécher",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "maleali",
+          "role": "fond",
+          "dose": "2 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "oudvoyager",
+          "role": "dessus",
+          "dose": "2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day",
+        "evening"
+      ],
+      "rationale": "Patchouli-cypriol sous oud-rose : plus masculin et sec.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "maleali_ambresupermassive",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "sécher",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "maleali",
+          "role": "fond",
+          "dose": "2 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "ambresupermassive",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Fond terreux sous ambre boozy : moins sucré, plus profond.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "grandsoir_oudvoyager",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "opulence",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "grandsoir",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "oudvoyager",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Base ambre-vanille sous oud-rose : oriental majestueux.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0,
+            1,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "m724_afternoonswim",
+      "status": "recommandé",
+      "signature": true,
+      "goal": "tenue",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "m724",
+          "role": "fond",
+          "dose": "2 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "afternoonswim",
+          "role": "dessus",
+          "dose": "3-4 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day"
+      ],
+      "rationale": "724 fixe les agrumes fugaces : le frais propre qui tient.",
+      "wear": {
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pacificchill_afternoonswim",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "fraîcheur",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "pacificchill",
+          "role": "fond",
+          "dose": "2 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "afternoonswim",
+          "role": "dessus",
+          "dose": "3 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day"
+      ],
+      "rationale": "Vert detox + agrumes juteux.",
+      "wear": {
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout"
+          ]
+        }
+      }
+    },
+    {
+      "id": "m724_pacificchill",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "fraîcheur",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "m724",
+          "role": "fond",
+          "dose": "2 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "pacificchill",
+          "role": "dessus",
+          "dose": "2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day"
+      ],
+      "rationale": "Vert frais + musc propre : sortie de douche chic.",
+      "wear": {
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_erbapura",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "gourmand fruité",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "erbapura",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day",
+        "evening"
+      ],
+      "rationale": "Fruits posés sur crème vanillée.",
+      "wear": {
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "nov"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            1,
+            2,
+            3,
+            2,
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            0
+          ],
+          "best_months": [
+            "avr"
+          ]
+        }
+      }
+    },
+    {
+      "id": "erbapura_afternoonswim",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "éclat",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "afternoonswim",
+          "role": "fond",
+          "dose": "3 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "erbapura",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day"
+      ],
+      "rationale": "Agrumes amplifiés sur fruits : explosion estivale.",
+      "wear": {
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout"
+          ]
+        }
+      }
+    },
+    {
+      "id": "maleali_boisimperial",
+      "status": "recommandé",
+      "signature": true,
+      "goal": "complémentarité",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "maleali",
+          "role": "fond",
+          "dose": "2 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "boisimperial",
+          "role": "dessus",
+          "dose": "2-3 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day",
+        "evening"
+      ],
+      "rationale": "Vert lumineux dessus, terreux poudré dessous. Maleali sans ambroxan garde la perception.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "maleali_muscnurasana",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "contraste",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "maleali",
+          "role": "fond",
+          "dose": "2 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "muscnurasana",
+          "role": "dessus",
+          "dose": "2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day"
+      ],
+      "rationale": "Musc-rose lumineux sur boisé terreux sec.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_silkstone",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "clean cosy",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "silkstone",
+          "role": "dessus",
+          "dose": "2-3 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day",
+        "evening"
+      ],
+      "rationale": "Floral aldéhydé adouci par la crème vanillée.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_qurashiblue",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "adoucir",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "qurashiblue",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day",
+        "evening"
+      ],
+      "rationale": "Ananas-oud adouci : freshie oudé sucré.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_myslf",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "cosy",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "myslf",
+          "role": "dessus",
+          "dose": "2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day",
+        "evening"
+      ],
+      "rationale": "Fleur d'oranger + vanille : floral doux.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_paradigme",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "cosy",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "paradigme",
+          "role": "dessus",
+          "dose": "2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Ambré boisé sucré : Paradigme cocooning.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_purpleaccento",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "gourmand fruité",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "purpleaccento",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day",
+        "evening"
+      ],
+      "rationale": "Fruité-oud arrondi.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_solaris",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "poudré gourmand",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "solaris",
+          "role": "dessus",
+          "dose": "2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Iris-vétiver adouci : poudré chic.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_raenira",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "cosy",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "raenira",
+          "role": "dessus",
+          "dose": "2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Immortelle miellée + vanille : ambré doux.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ]
+        }
+      }
+    },
+    {
+      "id": "afternoonswim_attrapereves",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "rafraîchir",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "afternoonswim",
+          "role": "fond",
+          "dose": "3 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "attrapereves",
+          "role": "dessus",
+          "dose": "1-2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day"
+      ],
+      "rationale": "Agrumes salins sur litchi-pivoine : Attrape-Rêves version estivale.",
+      "wear": {
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pacificchill_attrapereves",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "rafraîchir",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "pacificchill",
+          "role": "fond",
+          "dose": "2 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "attrapereves",
+          "role": "dessus",
+          "dose": "1-2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day"
+      ],
+      "rationale": "Vert frais qui éclaire rose et pivoine.",
+      "wear": {
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout"
+          ]
+        }
+      }
+    },
+    {
+      "id": "maleali_attrapereves",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "profondeur sans sucre",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "maleali",
+          "role": "fond",
+          "dose": "2 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "attrapereves",
+          "role": "dessus",
+          "dose": "1-2 sprays"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day",
+        "evening"
+      ],
+      "rationale": "Boisé terreux sec qui ancre le fruitchouli.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "avr",
+            "oct",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep",
+            "oct",
+            "nov"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vanilla_attrapereves",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "gourmand",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "fond",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "attrapereves",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Effet chocolat-praliné poudré.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ]
+        }
+      }
+    },
+    {
+      "id": "maleali_kirke",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "calmer le sucré",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "maleali",
+          "role": "fond",
+          "dose": "2 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "kirke",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day",
+        "evening"
+      ],
+      "rationale": "Boisé terreux sec sous bombe fruitée : le sucré est tenu, l'ensemble devient plus adulte.",
+      "wear": {
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep"
+          ]
+        }
+      }
+    },
+    {
+      "id": "afternoonswim_kirke",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "éclat estival",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "afternoonswim",
+          "role": "fond",
+          "dose": "3 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "kirke",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day"
+      ],
+      "rationale": "Agrumes salins sur fruits tropicaux : plus aérien, moins sirupeux en chaleur.",
+      "wear": {
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout"
+          ]
+        }
+      }
+    },
+    {
+      "id": "maleali_ostara",
+      "status": "recommandé",
+      "signature": false,
+      "goal": "calmer le musc",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "maleali",
+          "role": "fond",
+          "dose": "2 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "ostara",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day",
+        "evening"
+      ],
+      "rationale": "Le boisé sec structure le drydown musqué lourd d'Ostara.",
+      "wear": {
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout",
+            "sep"
+          ]
+        }
+      }
+    },
+    {
+      "id": "whitemusk_afternoonswim_attrapereves",
+      "status": "recommandé",
+      "signature": true,
+      "goal": "été qui tient",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "whitemusk",
+          "role": "fond",
+          "dose": "1 goutte"
+        },
+        {
+          "type": "perfume",
+          "ref": "afternoonswim",
+          "role": "milieu",
+          "dose": "3 sprays"
+        },
+        {
+          "type": "perfume",
+          "ref": "attrapereves",
+          "role": "dessus",
+          "dose": "1 spray"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "day"
+      ],
+      "rationale": "Fruité-floral pétillant qui tient : Afternoon Swim seul ne tient pas, Attrape-Rêves lui donne le corps.",
+      "wear": {
+        "dubai": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ]
+        },
+        "france": {
+          "months": [
+            0,
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            3,
+            2,
+            1,
+            0,
+            0
+          ],
+          "best_months": [
+            "mai",
+            "juin",
+            "juil",
+            "aout"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rosevanilla_attrapereves_vanilla",
+      "status": "recommandé",
+      "signature": true,
+      "goal": "gourmand soir",
+      "components": [
+        {
+          "type": "oil",
+          "ref": "rosevanilla",
+          "role": "fond",
+          "dose": "1 goutte"
+        },
+        {
+          "type": "perfume",
+          "ref": "attrapereves",
+          "role": "milieu",
+          "dose": "1 spray"
+        },
+        {
+          "type": "perfume",
+          "ref": "vanillapowder",
+          "role": "dessus",
+          "dose": "1 spray (voile)"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": [
+        "evening"
+      ],
+      "rationale": "Rose-cacao-vanille profond, longue tenue : dîner ou soirée d'hiver.",
+      "wear": {
+        "dubai": {
+          "months": [
+            3,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3
+          ],
+          "best_months": [
+            "jan",
+            "fev",
+            "mar",
+            "nov",
+            "dec"
+          ]
+        },
+        "france": {
+          "months": [
+            2,
+            2,
+            3,
+            3,
+            2,
+            1,
+            1,
+            1,
+            2,
+            3,
+            3,
+            2
+          ],
+          "best_months": [
+            "mar",
+            "avr",
+            "oct",
+            "nov"
+          ]
+        }
+      }
+    },
+    {
+      "id": "x_kirke_ostara",
+      "status": "déconseillé",
+      "signature": false,
+      "goal": "—",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "kirke",
+          "role": "fond"
+        },
+        {
+          "type": "perfume",
+          "ref": "ostara",
+          "role": "dessus"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": null,
+      "rationale": "Clones : aucun apport, projection doublée."
+    },
+    {
+      "id": "x_qurashi_purpleaccento",
+      "status": "déconseillé",
+      "signature": false,
+      "goal": "—",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "qurashiblue",
+          "role": "fond"
+        },
+        {
+          "type": "perfume",
+          "ref": "purpleaccento",
+          "role": "dessus"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": null,
+      "rationale": "Même ADN ananas-oud et deux gros projecteurs : nuage lourd."
+    },
+    {
+      "id": "x_qurashi_attrapereves",
+      "status": "déconseillé",
+      "signature": false,
+      "goal": "—",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "qurashiblue",
+          "role": "fond"
+        },
+        {
+          "type": "perfume",
+          "ref": "attrapereves",
+          "role": "dessus"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": null,
+      "rationale": "Combo puissance, pas élégance ; fonds sucrés cumulés. Si test : 1 spray chacun, soir au frais."
+    },
+    {
+      "id": "x_boisimperial_muscnurasana",
+      "status": "déconseillé",
+      "signature": false,
+      "goal": "—",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "boisimperial",
+          "role": "fond"
+        },
+        {
+          "type": "perfume",
+          "ref": "muscnurasana",
+          "role": "dessus"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": null,
+      "rationale": "Double base ambroxan / muscs-Iso E : tu ne sentiras plus rien après 1h et tu surdoseras."
+    },
+    {
+      "id": "x_grandsoir_ambresupermassive",
+      "status": "déconseillé",
+      "signature": false,
+      "goal": "—",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "grandsoir",
+          "role": "fond"
+        },
+        {
+          "type": "perfume",
+          "ref": "ambresupermassive",
+          "role": "dessus"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": null,
+      "rationale": "Deux ambres opulents : saturation, aucun contraste."
+    },
+    {
+      "id": "x_boisimperial_myslf",
+      "status": "déconseillé",
+      "signature": false,
+      "goal": "—",
+      "components": [
+        {
+          "type": "perfume",
+          "ref": "boisimperial",
+          "role": "fond"
+        },
+        {
+          "type": "perfume",
+          "ref": "myslf",
+          "role": "dessus"
+        }
+      ],
+      "application_order": "fond → dessus (huile d'abord, puis parfum de fond, puis parfum de dessus)",
+      "time_of_day": null,
+      "rationale": "Double ambroxan : perception nulle pour toi."
+    }
+  ],
+  "similarities": [
+    {
+      "a": "kirke",
+      "b": "ostara",
+      "relation": "doublon",
+      "reason": "Même construction : framboise, poire, passion, héliotrope, patchouli."
+    },
+    {
+      "a": "grandsoir",
+      "b": "ambresupermassive",
+      "relation": "proche",
+      "reason": "Deux ambres vanillés opulents pour la même fenêtre ; Ambre Supermassive ajoute tabac-rhum."
+    },
+    {
+      "a": "purpleaccento",
+      "b": "qurashiblue",
+      "relation": "proche",
+      "reason": "Ananas-agrumes dessus, oud-musc-sucré dessous."
+    },
+    {
+      "a": "purpleaccento",
+      "b": "erbapura",
+      "relation": "proche",
+      "reason": "Même ADN Xerjoff fruité ; Purple Accento plus doux et oudé."
+    },
+    {
+      "a": "silkstone",
+      "b": "m724",
+      "relation": "proche",
+      "reason": "Aldéhydes, fleurs blanches, santal, musc blanc."
+    },
+    {
+      "a": "oudvoyager",
+      "b": "safariextreme",
+      "relation": "proche",
+      "reason": "Axe safran-rose/floral-oud ; Oud Voyager propre et poudré, Safari opulent et cuiré."
+    },
+    {
+      "a": "kayan",
+      "b": "oudmaracuja",
+      "relation": "proche",
+      "reason": "Oud-safran-cuir ; Kayan caramel, Oud Maracujá passion."
+    },
+    {
+      "a": "solaris",
+      "b": "raenira",
+      "relation": "proche",
+      "reason": "Floral + boisé + fond ambré-tonka ; Solaris poudré, Rae Nira miellé."
+    },
+    {
+      "a": "boisimperial",
+      "b": "maleali",
+      "relation": "complementaire",
+      "reason": "Vert lumineux vs terreux poudré, fond vétiver-patchouli commun."
+    },
+    {
+      "a": "myslf",
+      "b": "muscnurasana",
+      "relation": "proche",
+      "reason": "Propre floral sur base ambroxan/bois ambrés."
+    }
+  ]
+}
