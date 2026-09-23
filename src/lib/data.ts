@@ -6,14 +6,17 @@ import type { Layering, OlfactothequeDB, Oil, Perfume } from "./types";
 
 type Row<T> = { id: string; data: T; image_url?: string | null };
 
-/** Charge toute la collection (quelques dizaines de lignes : on prend tout d'un coup). */
 /** Mode démo (dev uniquement) : lit data/olfactotheque_db.json, sans Supabase. */
 export const DEMO_MODE = process.env.DEMO_MODE === "1" && process.env.NODE_ENV !== "production";
 
+/** Charge toute la collection (quelques dizaines de lignes : on prend tout d'un coup). */
 export async function loadDB(): Promise<OlfactothequeDB> {
   if (DEMO_MODE) {
     const { readFile } = await import("node:fs/promises");
-    return JSON.parse(await readFile("data/olfactotheque_db.json", "utf8")) as OlfactothequeDB;
+    const db = JSON.parse(await readFile("data/olfactotheque_db.json", "utf8")) as OlfactothequeDB;
+    const images = JSON.parse(await readFile("seed/images.json", "utf8")) as Record<string, { images: string[] }>;
+    db.perfumes = db.perfumes.map((p) => ({ ...p, image_url: images[p.id]?.images[0] ?? null }));
+    return db;
   }
   const supabase = await requireUser();
   if (!supabase) redirect("/login");

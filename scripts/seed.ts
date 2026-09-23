@@ -98,7 +98,13 @@ async function seedImages() {
         console.log(`  · ${id} : ${src} → ${e instanceof Error ? e.message : e}`);
       }
     }
-    if (!done) console.log(`  ✗ ${id} : pas de photo (visuel généré utilisé ; à remplacer depuis la fiche)`);
+    if (!done && candidates[0]) {
+      // Téléchargement impossible : on affiche l'image distante directement.
+      await supabase.from("perfumes").update({ image_url: candidates[0] }).eq("id", id);
+      console.log(`  ~ ${id} : lien direct vers ${candidates[0]}`);
+    } else if (!done) {
+      console.log(`  ✗ ${id} : pas de photo (visuel généré ; à ajouter depuis la fiche)`);
+    }
   }
 }
 

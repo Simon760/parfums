@@ -36,13 +36,13 @@ export function LoginForm({ initialError }: { initialError: string | null }) {
   }
 
   const input =
-    "w-full rounded-none border-0 border-b border-line-2 bg-transparent px-0 py-3 text-lg outline-none placeholder:text-muted focus:border-ink";
+    "mt-1.5 w-full rounded-2xl bg-white/80 px-4 py-3.5 text-[16px] outline-none placeholder:text-muted focus:ring-2 focus:ring-ink/10";
   const button =
-    "mt-8 w-full rounded-full bg-ink py-3.5 text-sm tracking-wide text-paper transition-opacity disabled:opacity-40";
+    "mt-5 h-12 w-full rounded-full bg-ink text-sm font-semibold text-white transition active:scale-[0.99] disabled:opacity-30";
 
   return step === "email" ? (
     <form onSubmit={sendLink}>
-      <label className="eyebrow" htmlFor="email">
+      <label className="label" htmlFor="email">
         Email
       </label>
       <input
@@ -66,7 +66,7 @@ export function LoginForm({ initialError }: { initialError: string | null }) {
         Un email est parti vers <strong className="font-medium text-ink">{email}</strong>. Clique sur le lien, ou saisis
         le code reçu ici (pratique depuis l&apos;app installée sur l&apos;écran d&apos;accueil).
       </p>
-      <label className="eyebrow" htmlFor="code">
+      <label className="label" htmlFor="code">
         Code
       </label>
       <input

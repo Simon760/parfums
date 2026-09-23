@@ -1,29 +1,40 @@
 import { MONTH_SHORT, SCORE_LABELS } from "@/lib/labels";
 
-const SCORE_STYLE = ["bg-transparent border border-line-2", "bg-ink/15", "bg-ink/45", "bg-ink"];
+const HEIGHT = ["12%", "38%", "68%", "100%"];
 
-/** 12 pastilles : intensité = score du mois (0 à 3). */
+/** Mini histogramme des 12 mois : hauteur = score (0 à 3). */
 export function MonthStrip({
   months,
   current,
   compact = false,
+  color = "#0d0e12",
   onChange,
 }: {
   months: number[];
   current?: number;
   compact?: boolean;
+  color?: string;
   onChange?: (month: number, score: number) => void;
 }) {
   return (
-    <div className={`grid grid-cols-12 ${compact ? "gap-[3px]" : "gap-1"}`}>
+    <div className={`grid grid-cols-12 ${compact ? "gap-[3px]" : "gap-1.5"}`}>
       {months.map((score, i) => {
-        const cell = (
+        const isCurrent = i === current;
+        const bar = (
           <>
-            <span
-              className={`block w-full rounded-full ${compact ? "h-1.5" : "h-2.5"} ${SCORE_STYLE[score] ?? SCORE_STYLE[0]}`}
-            />
+            <span className={`flex items-end ${compact ? "h-6" : "h-14"}`}>
+              <span
+                className={`mx-auto block rounded-full transition-all ${compact ? "w-full max-w-[7px]" : "w-full max-w-[18px]"}`}
+                style={{
+                  height: HEIGHT[score] ?? HEIGHT[0],
+                  background: score === 0 ? "var(--line)" : color,
+                  opacity: score === 0 ? 1 : 0.35 + score * 0.2,
+                  boxShadow: isCurrent ? `0 0 0 2px var(--card), 0 0 0 3.5px ${color}` : undefined,
+                }}
+              />
+            </span>
             {!compact && (
-              <span className={`mt-1 block text-center text-[10px] ${i === current ? "font-semibold text-ink" : "text-muted"}`}>
+              <span className={`mt-1.5 block text-center text-[10px] font-medium ${isCurrent ? "text-ink" : "text-muted"}`}>
                 {MONTH_SHORT[i]}
               </span>
             )}
@@ -36,13 +47,13 @@ export function MonthStrip({
             type="button"
             title={title}
             onClick={() => onChange(i, (score + 1) % 4)}
-            className="cursor-pointer rounded py-1 hover:bg-paper-2"
+            className="cursor-pointer rounded-lg px-0.5 pt-1 hover:bg-soft"
           >
-            {cell}
+            {bar}
           </button>
         ) : (
-          <span key={i} title={title} className={i === current && compact ? "rounded-full ring-1 ring-accent ring-offset-1 ring-offset-card" : ""}>
-            {cell}
+          <span key={i} title={title}>
+            {bar}
           </span>
         );
       })}

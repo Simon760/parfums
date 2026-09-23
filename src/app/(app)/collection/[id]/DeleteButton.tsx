@@ -21,7 +21,7 @@ export function DeleteButton({ id, name }: { id: string; name: string }) {
   }
 
   return (
-    <button onClick={remove} disabled={busy} className="rounded-full px-5 py-2.5 text-sm text-danger hover:bg-danger/5">
+    <button onClick={remove} disabled={busy} className="rounded-full px-5 py-3 text-sm font-semibold text-danger transition hover:bg-danger/10">
       {busy ? "Suppression…" : "Supprimer"}
     </button>
   );

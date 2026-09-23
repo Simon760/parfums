@@ -1,69 +1,97 @@
 @import "tailwindcss";
-@import "@fontsource/instrument-serif/latin-400.css";
-@import "@fontsource/instrument-serif/latin-400-italic.css";
 
-/* 100bon — minimal clair, papier chaud, encre douce. */
+/* 100bon — clair, frais, vivant. Sans-serif graphique, dégradés par famille. */
 :root {
-  --paper: #f5f2ec;
-  --paper-2: #efebe3;
-  --card: #fbfaf7;
-  --ink: #1d1b18;
-  --ink-2: #4a463f;
-  --muted: #8a847a;
-  --line: #e2ddd3;
-  --line-2: #d4cec2;
-  --accent: #6b5a3e;
-  --danger: #a4493d;
-  --ok: #5d7a52;
+  --bg: #f4f5f7;
+  --card: #ffffff;
+  --ink: #0d0e12;
+  --ink-2: #3a3d46;
+  --muted: #858a96;
+  --line: #e8e9ee;
+  --soft: #eceef2;
+  --danger: #e5484d;
+  --ok: #12a594;
+  --aura: linear-gradient(120deg, #7be3d0 0%, #9fb4ff 45%, #ffb8d1 75%, #ffd29e 100%);
 }
 
 @theme inline {
-  --color-paper: var(--paper);
-  --color-paper-2: var(--paper-2);
+  --color-bg: var(--bg);
   --color-card: var(--card);
   --color-ink: var(--ink);
   --color-ink-2: var(--ink-2);
   --color-muted: var(--muted);
   --color-line: var(--line);
-  --color-line-2: var(--line-2);
-  --color-accent: var(--accent);
+  --color-soft: var(--soft);
   --color-danger: var(--danger);
   --color-ok: var(--ok);
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --radius-4xl: 2rem;
+  --shadow-soft: 0 1px 2px rgb(13 14 18 / 0.04), 0 8px 24px -12px rgb(13 14 18 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(13 14 18 / 0.04), 0 24px 48px -20px rgb(13 14 18 / 0.28);
 }
 
 html {
-  background: var(--paper);
+  background: var(--bg);
   color: var(--ink);
   -webkit-tap-highlight-color: transparent;
 }
 
 body {
   font-family: var(--font-sans);
-  font-feature-settings: "ss01", "cv11";
+  letter-spacing: -0.011em;
 }
 
 ::selection {
-  background: #e6dcc8;
+  background: #c9d4ff;
 }
 
-.eyebrow {
-  font-size: 0.6875rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+/* Titres graphiques */
+.title {
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 500;
   color: var(--muted);
 }
 
-.display {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  line-height: 1.02;
+.aura {
+  background: var(--aura);
+}
+.aura-text {
+  background: var(--aura);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
-.hairline {
-  border-color: var(--line);
+/* Bordure dégradée (cartes IA) */
+.aura-border {
+  position: relative;
+  background: var(--card);
+}
+.aura-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1.5px;
+  border-radius: inherit;
+  background: var(--aura);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.glass {
+  background: rgb(255 255 255 / 0.72);
+  backdrop-filter: blur(20px) saturate(1.6);
+  -webkit-backdrop-filter: blur(20px) saturate(1.6);
 }
 
 .scrollbar-none {
@@ -76,7 +104,7 @@ body {
 @keyframes rise {
   from {
     opacity: 0;
-    transform: translateY(6px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -84,25 +112,40 @@ body {
   }
 }
 .rise {
-  animation: rise 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation: rise 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
-@keyframes breathe {
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+.shimmer {
+  background: linear-gradient(90deg, #7be3d0, #9fb4ff, #ffb8d1, #ffd29e, #7be3d0);
+  background-size: 200% 100%;
+  animation: shimmer 2.4s linear infinite;
+}
+
+@keyframes pulse-soft {
   0%,
   100% {
-    opacity: 0.35;
+    opacity: 0.4;
   }
   50% {
     opacity: 1;
   }
 }
-.breathe {
-  animation: breathe 1.6s ease-in-out infinite;
+.pulse-soft {
+  animation: pulse-soft 1.6s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .rise,
-  .breathe {
+  .shimmer,
+  .pulse-soft {
     animation: none;
   }
 }

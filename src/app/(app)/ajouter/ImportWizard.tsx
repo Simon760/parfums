@@ -118,8 +118,8 @@ export function ImportWizard({ db }: { db: OlfactothequeDB }) {
 
   return (
     <div className="rise mx-auto max-w-3xl">
-      <p className="eyebrow mb-2">Nouveau parfum</p>
-      <h1 className="display mb-10 text-5xl md:text-7xl">Ajouter</h1>
+      <p className="label mb-1">Nouveau parfum</p>
+      <h1 className="title mb-8 text-[44px] md:text-[80px]">Ajouter</h1>
 
       <Steps step={step} />
 
@@ -128,27 +128,27 @@ export function ImportWizard({ db }: { db: OlfactothequeDB }) {
       {step === "search" && (
         <>
           <form onSubmit={search}>
-            <label htmlFor="q" className="eyebrow">
+            <label htmlFor="q" className="label">
               Nom et maison
             </label>
-            <div className="mt-2 flex items-end gap-3">
+            <div className="mt-2 flex items-center gap-2 rounded-full bg-card p-2 pl-6 shadow-soft">
               <input
                 id="q"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Aventus Creed"
-                className="display min-w-0 flex-1 border-b border-line-2 bg-transparent py-2 text-3xl outline-none placeholder:text-muted/60 focus:border-ink md:text-4xl"
+                className="min-w-0 flex-1 bg-transparent text-xl font-semibold tracking-tight outline-none placeholder:text-muted/50 md:text-2xl"
               />
               <button
                 disabled={loading || query.trim().length < 2}
-                className="rounded-full bg-ink px-5 py-3 text-sm text-paper disabled:opacity-30"
+                className="h-12 rounded-full bg-ink px-6 text-sm font-semibold text-white disabled:opacity-25"
               >
                 {loading ? "Recherche…" : "Chercher"}
               </button>
             </div>
           </form>
 
-          {loading && <p className="breathe mt-8 text-sm text-muted">Je cherche ce parfum sur le web…</p>}
+          {loading && <p className="pulse-soft mt-8 text-sm text-muted">Je cherche ce parfum sur le web…</p>}
 
           {candidates && !loading && (
             <div className="mt-10">
@@ -156,7 +156,7 @@ export function ImportWizard({ db }: { db: OlfactothequeDB }) {
                 <p className="text-sm text-muted">Aucun résultat. Précise le nom ou la maison.</p>
               ) : (
                 <>
-                  <p className="eyebrow mb-3">Lequel ?</p>
+                  <p className="label mb-3">Lequel ?</p>
                   <ul className="space-y-3">
                     {candidates.map((c, i) => {
                       const active = candidate === c;
@@ -165,17 +165,17 @@ export function ImportWizard({ db }: { db: OlfactothequeDB }) {
                           <button
                             type="button"
                             onClick={() => setCandidate(c)}
-                            className={`w-full rounded-2xl border p-5 text-left transition ${
-                              active ? "border-ink bg-card" : "border-line bg-card/60 hover:border-ink-2"
+                            className={`w-full rounded-4xl bg-card p-5 text-left shadow-soft transition ${
+                              active ? "ring-2 ring-ink" : "hover:shadow-lift"
                             }`}
                           >
-                            <p className="eyebrow">
+                            <p className="label">
                               {[c.house, c.year, c.concentration].filter(Boolean).join(" · ")}
                             </p>
-                            <p className="display mt-1 text-3xl">{c.name}</p>
+                            <p className="title mt-1 text-[28px]">{c.name}</p>
                             <p className="mt-1.5 text-sm text-ink-2">{c.description}</p>
                             {db.perfumes.some((p) => slugify(p.name) === slugify(c.name) && slugify(p.house) === slugify(c.house)) && (
-                              <p className="mt-2 text-[12px] text-accent">Déjà dans ta collection</p>
+                              <p className="mt-2 text-[12px] text-[#3b4fc4]">Déjà dans ta collection</p>
                             )}
                           </button>
                         </li>
@@ -186,8 +186,8 @@ export function ImportWizard({ db }: { db: OlfactothequeDB }) {
               )}
 
               {candidate && (
-                <div className="rise mt-8 rounded-2xl border border-line bg-card p-5">
-                  <p className="eyebrow mb-3">Tu l&apos;as en</p>
+                <div className="rise mt-6 rounded-4xl bg-card p-5 shadow-soft">
+                  <p className="label mb-3">Tu l&apos;as en</p>
                   <div className="flex flex-wrap gap-2">
                     {OWNED_FORMATS.map((f) => (
                       <Chip key={f} active={ownedFormat === f} onClick={() => setOwnedFormat(f)}>
@@ -195,7 +195,7 @@ export function ImportWizard({ db }: { db: OlfactothequeDB }) {
                       </Chip>
                     ))}
                   </div>
-                  <button onClick={enrich} className="mt-6 w-full rounded-full bg-ink py-3.5 text-sm text-paper">
+                  <button onClick={enrich} className="mt-6 h-12 w-full rounded-full bg-ink text-sm font-semibold text-white">
                     Construire la fiche
                   </button>
                   <p className="mt-2 text-center text-[12px] text-muted">
@@ -214,22 +214,20 @@ export function ImportWizard({ db }: { db: OlfactothequeDB }) {
 
       {step === "enrich" && (
         <div className="py-16 text-center">
-          <p className="display mb-4 text-4xl">{candidate?.name}</p>
+          <p className="title mb-4 text-[44px]">{candidate?.name}</p>
           <p key={tick} className="rise text-sm text-ink-2">
             {ENRICH_MESSAGES[Math.min(tick, ENRICH_MESSAGES.length - 1)]}
           </p>
-          <div className="mx-auto mt-8 h-px w-48 overflow-hidden bg-line">
-            <div className="breathe h-full w-full bg-ink" />
-          </div>
+          <div className="shimmer mx-auto mt-8 h-1.5 w-56 rounded-full" />
         </div>
       )}
 
       {step === "review" && enrichment && (
-        <div className="space-y-12">
-          <section>
-            <h2 className="eyebrow mb-4 border-b border-line pb-2 text-ink">Photo</h2>
+        <div className="space-y-4">
+          <section className="rounded-4xl bg-card p-5 shadow-soft md:p-7">
+            <h2 className="mb-4 text-lg font-semibold tracking-tight">Photo</h2>
             <div className="grid gap-5 sm:grid-cols-[160px_1fr]">
-              <div className="aspect-[3/4] overflow-hidden rounded-2xl border border-line bg-white">
+              <div className="aspect-[4/5] overflow-hidden rounded-3xl bg-soft">
                 {image ? (
                   <img src={image} alt="" referrerPolicy="no-referrer" className="h-full w-full object-contain p-2" />
                 ) : (
@@ -254,8 +252,8 @@ export function ImportWizard({ db }: { db: OlfactothequeDB }) {
           </section>
 
           {enrichment.similarities.length > 0 && (
-            <section>
-              <h2 className="eyebrow mb-4 border-b border-line pb-2 text-ink">Liens avec ta collection</h2>
+            <section className="rounded-4xl bg-card p-5 shadow-soft md:p-7">
+              <h2 className="mb-4 text-lg font-semibold tracking-tight">Liens avec ta collection</h2>
               <ul className="space-y-2">
                 {enrichment.similarities.map((s, i) => (
                   <li key={i}>
@@ -272,8 +270,8 @@ export function ImportWizard({ db }: { db: OlfactothequeDB }) {
           )}
 
           {enrichment.layerings.length > 0 && (
-            <section>
-              <h2 className="eyebrow mb-4 border-b border-line pb-2 text-ink">Layerings à tester</h2>
+            <section className="rounded-4xl bg-card p-5 shadow-soft md:p-7">
+              <h2 className="mb-4 text-lg font-semibold tracking-tight">Layerings à tester</h2>
               <ul className="space-y-2">
                 {enrichment.layerings.map((l, i) => (
                   <li key={i}>
@@ -293,8 +291,8 @@ export function ImportWizard({ db }: { db: OlfactothequeDB }) {
           )}
 
           {enrichment.sources.length > 0 && (
-            <section>
-              <h2 className="eyebrow mb-4 border-b border-line pb-2 text-ink">Sources</h2>
+            <section className="rounded-4xl bg-card p-5 shadow-soft md:p-7">
+              <h2 className="mb-4 text-lg font-semibold tracking-tight">Sources</h2>
               <ul className="space-y-1 text-[13px]">
                 {enrichment.sources.map((s) => (
                   <li key={s.url} className="truncate">
@@ -308,7 +306,7 @@ export function ImportWizard({ db }: { db: OlfactothequeDB }) {
           )}
 
           <section>
-            <h2 className="display mb-8 text-4xl">Vérifie la fiche</h2>
+            <h2 className="title mb-4 mt-8 text-[28px] md:text-4xl">Vérifie la fiche</h2>
             <PerfumeEditor
               db={db}
               initial={enrichment.perfume as Perfume}
@@ -348,7 +346,7 @@ function Toggle({
   badge?: React.ReactNode;
 }) {
   return (
-    <label className={`flex cursor-pointer gap-3 rounded-xl border p-4 transition ${checked ? "border-ink-2 bg-card" : "border-line opacity-60"}`}>
+    <label className={`flex cursor-pointer gap-3 rounded-3xl bg-soft p-4 transition ${checked ? "" : "opacity-50"}`}>
       <input type="checkbox" checked={checked} onChange={onChange} className="mt-1 accent-[var(--ink)]" />
       <span>
         <span className="flex flex-wrap items-center gap-2 text-sm font-medium">
@@ -368,11 +366,11 @@ function Steps({ step }: { step: Step }) {
   ];
   const index = steps.findIndex((s) => s.id === step);
   return (
-    <ol className="mb-10 flex gap-2">
+    <ol className="mb-8 flex gap-2">
       {steps.map((s, i) => (
         <li key={s.id} className="flex-1">
-          <span className={`block h-0.5 rounded-full ${i <= index ? "bg-ink" : "bg-line"}`} />
-          <span className={`mt-2 block text-[11px] tracking-wide ${i === index ? "text-ink" : "text-muted"}`}>{s.label}</span>
+          <span className={`block h-1.5 rounded-full ${i <= index ? "aura" : "bg-line"}`} />
+          <span className={`mt-2 block text-[12px] font-medium ${i === index ? "text-ink" : "text-muted"}`}>{s.label}</span>
         </li>
       ))}
     </ol>

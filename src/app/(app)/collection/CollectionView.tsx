@@ -45,10 +45,12 @@ export function CollectionView({ db }: { db: OlfactothequeDB }) {
 
   return (
     <div className="rise">
-      <header className="mb-8 flex flex-wrap items-end justify-between gap-4">
+      <header className="mb-6 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="eyebrow mb-2">{db.perfumes.length} parfums · {db.oils.length} huiles</p>
-          <h1 className="display text-5xl md:text-7xl">Collection</h1>
+          <p className="label mb-1">
+            {db.perfumes.length} parfums · {db.oils.length} huiles
+          </p>
+          <h1 className="title text-[44px] md:text-[80px]">Collection</h1>
         </div>
         <Segmented
           value={region}
@@ -60,17 +62,21 @@ export function CollectionView({ db }: { db: OlfactothequeDB }) {
         />
       </header>
 
-      <div className="mb-4">
+      <div className="mb-4 flex items-center gap-3 rounded-full bg-card px-5 shadow-soft focus-within:ring-2 focus-within:ring-ink/10">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-muted">
+          <circle cx="11" cy="11" r="7" />
+          <path d="M20 20l-3.5-3.5" strokeLinecap="round" />
+        </svg>
         <input
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Nom, maison, note, accord…"
-          className="w-full border-b border-line-2 bg-transparent py-3 text-lg outline-none placeholder:text-muted focus:border-ink"
+          className="h-13 w-full bg-transparent py-3.5 text-[15px] outline-none placeholder:text-muted"
         />
       </div>
 
-      <div className="scrollbar-none -mx-5 mb-3 flex gap-2 overflow-x-auto px-5 md:mx-0 md:flex-wrap md:px-0">
+      <div className="scrollbar-none -mx-4 mb-3 flex gap-2 overflow-x-auto px-4 py-1 md:mx-0 md:flex-wrap md:px-0">
         {db.families.map((f) => (
           <Chip key={f.id} active={families.includes(f.id)} onClick={() => toggleFamily(f.id)}>
             <FamilyDot color={f.color} />
@@ -88,63 +94,71 @@ export function CollectionView({ db }: { db: OlfactothequeDB }) {
         <Chip active={time === "evening"} onClick={() => setTime(time === "evening" ? null : "evening")}>
           Soir
         </Chip>
-        <label className="ml-auto flex items-center gap-2 text-[13px] text-muted">
-          Trier
-          <select
-            value={sort}
-            onChange={(e) => setSort(e.target.value as Sort)}
-            className="rounded-full border border-line-2 bg-card px-3 py-1.5 text-ink outline-none"
-          >
-            <option value="recent">Récents</option>
-            <option value="name">Nom</option>
-            <option value="house">Maison</option>
-            <option value="sillage">Sillage</option>
-          </select>
-        </label>
+        <select
+          value={sort}
+          onChange={(e) => setSort(e.target.value as Sort)}
+          aria-label="Trier"
+          className="ml-auto rounded-full bg-card px-4 py-2 text-[13px] font-medium shadow-soft outline-none"
+        >
+          <option value="recent">Récents</option>
+          <option value="name">Nom</option>
+          <option value="house">Maison</option>
+          <option value="sillage">Sillage</option>
+        </select>
       </div>
 
       {perfumes.length === 0 ? (
-        <p className="py-16 text-center text-muted">Aucun parfum ne correspond.</p>
+        <p className="rounded-3xl bg-card py-16 text-center text-muted shadow-soft">Aucun parfum ne correspond.</p>
       ) : (
-        <div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
-          {perfumes.map((p) => (
-            <Link key={p.id} href={`/collection/${p.id}`} className="group">
-              <BottleImage
-                name={p.name}
-                family={p.family}
-                imageUrl={p.image_url}
-                families={db.families}
-                className="aspect-[3/4] rounded-2xl transition-transform duration-300 group-hover:-translate-y-1"
-              />
-              <div className="mt-3 px-0.5">
-                <p className="eyebrow truncate">{p.house}</p>
-                <p className="display mt-0.5 truncate text-2xl">{p.name}</p>
-                <p className="mt-1 flex items-center gap-1.5 truncate text-[12px] text-muted">
-                  <FamilyDot color={familyColor(db, p.family)} />
-                  {p.family_label} · {SILLAGE_LABELS[p.performance.sillage]}
-                </p>
-                <div className="mt-2.5">
-                  <MonthStrip months={p.wear[region].months} current={month} compact />
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:gap-4 lg:grid-cols-4">
+          {perfumes.map((p) => {
+            const color = familyColor(db, p.family);
+            return (
+              <Link
+                key={p.id}
+                href={`/collection/${p.id}`}
+                className="group flex flex-col rounded-4xl bg-card p-2 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
+              >
+                <BottleImage
+                  name={p.name}
+                  family={p.family}
+                  imageUrl={p.image_url}
+                  families={db.families}
+                  className="aspect-[4/5] rounded-[26px]"
+                />
+                <div className="flex flex-1 flex-col px-2.5 pb-2 pt-3">
+                  <p className="truncate text-[11.5px] font-medium text-muted">{p.house}</p>
+                  <p className="title truncate text-[21px] md:text-2xl">{p.name}</p>
+                  <p className="mt-1 flex items-center gap-1.5 truncate text-[12px] text-ink-2">
+                    <FamilyDot color={color} className="h-2 w-2" />
+                    <span className="truncate">{p.family_label}</span>
+                  </p>
+                  <div className="mt-3">
+                    <MonthStrip months={p.wear[region].months} current={month} compact color={color} />
+                  </div>
+                  <p className="mt-1.5 text-[11px] text-muted">Sillage {SILLAGE_LABELS[p.performance.sillage].toLowerCase()}</p>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            );
+          })}
         </div>
       )}
 
       {db.oils.length > 0 && !query && families.length === 0 && (
-        <section className="mt-20">
-          <h2 className="display mb-6 text-4xl">Huiles</h2>
+        <section className="mt-16">
+          <h2 className="title mb-5 text-[28px] md:text-4xl">Huiles</h2>
           <div className="grid gap-4 md:grid-cols-3">
             {db.oils.map((o) => (
-              <article key={o.id} className="rounded-2xl border border-line bg-card p-5">
-                <p className="eyebrow mb-1">{o.type}</p>
-                <h3 className="display mb-2 text-2xl">{o.name}</h3>
-                <p className="mb-3 text-sm leading-relaxed text-ink-2">{o.profile}</p>
-                <p className="text-[13px] text-muted">{o.role}</p>
-                <p className="mt-3 border-t border-line pt-3 text-[12.5px] text-ink-2">
-                  {o.dosage.drops.min === o.dosage.drops.max ? o.dosage.drops.min : `${o.dosage.drops.min}-${o.dosage.drops.max}`}{" "}
-                  goutte(s) · {o.dosage.method}
+              <article key={o.id} className="rounded-4xl bg-card p-6 shadow-soft">
+                <p className="label">{o.type}</p>
+                <h3 className="title mt-1 text-[26px]">{o.name}</h3>
+                <p className="mt-2 text-[13.5px] leading-relaxed text-ink-2">{o.profile}</p>
+                <p className="mt-3 rounded-2xl bg-soft px-3 py-2.5 text-[12.5px] text-ink-2">
+                  <span className="font-semibold text-ink">
+                    {o.dosage.drops.min === o.dosage.drops.max ? o.dosage.drops.min : `${o.dosage.drops.min}–${o.dosage.drops.max}`}{" "}
+                    goutte(s)
+                  </span>{" "}
+                  · {o.role}
                 </p>
               </article>
             ))}

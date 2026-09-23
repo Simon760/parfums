@@ -31,15 +31,15 @@ export function TagInput({
   }
 
   return (
-    <div className="flex flex-wrap items-center gap-1.5 border-b border-line-2 py-2 focus-within:border-ink">
+    <div className="mt-1.5 flex flex-wrap items-center gap-1.5 rounded-2xl bg-soft px-3 py-2 focus-within:ring-2 focus-within:ring-ink/10">
       {values.map((v) => (
-        <span key={v} className="inline-flex items-center gap-1 rounded-full bg-paper-2 py-1 pl-2.5 pr-1.5 text-[13px]">
+        <span key={v} className="inline-flex items-center gap-1 rounded-full bg-card py-1 pl-2.5 pr-1.5 text-[13px] font-medium shadow-soft">
           {display(v)}
           <button
             type="button"
             aria-label={`Retirer ${display(v)}`}
             onClick={() => onChange(values.filter((x) => x !== v))}
-            className="flex h-4 w-4 items-center justify-center rounded-full text-muted hover:bg-line-2 hover:text-ink"
+            className="flex h-4 w-4 items-center justify-center rounded-full text-muted hover:bg-line hover:text-ink"
           >
             ×
           </button>

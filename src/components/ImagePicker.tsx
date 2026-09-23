@@ -55,11 +55,11 @@ export function ImagePicker({
   return (
     <div>
       {!images && !loading && (
-        <button type="button" onClick={search} className="rounded-full border border-line-2 bg-card px-4 py-2 text-sm hover:border-ink">
+        <button type="button" onClick={search} className="rounded-full border border-line bg-card px-4 py-2 text-sm hover:border-ink">
           Chercher les photos officielles
         </button>
       )}
-      {loading && <p className="breathe text-sm text-muted">Recherche des photos…</p>}
+      {loading && <p className="pulse-soft text-sm text-muted">Recherche des photos…</p>}
       {error && <p className="text-sm text-danger">{error}</p>}
       {images && !loading && (
         <>
@@ -98,13 +98,13 @@ export function ImagePicker({
           value={manual}
           onChange={(e) => setManual(e.target.value)}
           placeholder="…ou colle l'URL d'une image"
-          className="min-w-0 flex-1 border-b border-line-2 bg-transparent py-2 text-sm outline-none focus:border-ink"
+          className="min-w-0 flex-1 mt-1.5 rounded-2xl bg-soft px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-ink/10"
         />
         <button
           type="button"
           disabled={!/^https?:\/\//.test(manual)}
           onClick={() => onPick(manual)}
-          className="rounded-full border border-line-2 px-3 text-sm disabled:opacity-30"
+          className="rounded-full border border-line px-3 text-sm disabled:opacity-30"
         >
           Utiliser
         </button>

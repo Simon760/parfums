@@ -56,7 +56,7 @@ export function PerfumeEditor({
   }
 
   return (
-    <form onSubmit={submit} className="space-y-12">
+    <form onSubmit={submit} className="space-y-4">
       <Group title="Identité">
         <div className="grid gap-x-6 gap-y-5 sm:grid-cols-2">
           <Field label="Nom">
@@ -79,7 +79,7 @@ export function PerfumeEditor({
             <select
               value={p.owned_format}
               onChange={(e) => set("owned_format", e.target.value as Perfume["owned_format"])}
-              className="w-full border-b border-line-2 bg-transparent py-2 text-[15px] outline-none focus:border-ink"
+              className="w-full mt-1.5 rounded-2xl bg-soft px-4 py-3 text-[15px] outline-none focus:ring-2 focus:ring-ink/10"
             >
               {OWNED_FORMATS.map((f) => (
                 <option key={f}>{f}</option>
@@ -127,8 +127,8 @@ export function PerfumeEditor({
           ))}
         </div>
         {pendingNotes.length > 0 && (
-          <div className="mt-5 rounded-xl bg-paper-2 p-4">
-            <p className="eyebrow mb-3">Nouvelles notes — choisis leur catégorie</p>
+          <div className="mt-5 rounded-3xl bg-[#9fb4ff]/15 p-4">
+            <p className="label mb-3">Nouvelles notes — choisis leur catégorie</p>
             <ul className="space-y-2">
               {pendingNotes.map((n) => (
                 <li key={n.id} className="flex items-center justify-between gap-3 text-sm">
@@ -140,7 +140,7 @@ export function PerfumeEditor({
                         all.map((x) => (x.id === n.id ? { ...x, category: e.target.value as NoteCategory } : x)),
                       )
                     }
-                    className="rounded-full border border-line-2 bg-card px-3 py-1 text-[13px]"
+                    className="rounded-full border border-line bg-card px-3 py-1 text-[13px]"
                   >
                     {db.note_categories.map((c) => (
                       <option key={c.id} value={c.id}>
@@ -287,7 +287,7 @@ export function PerfumeEditor({
             <select
               value={p.recommended_oil.oil}
               onChange={(e) => set("recommended_oil", { ...p.recommended_oil, oil: e.target.value })}
-              className="w-full border-b border-line-2 bg-transparent py-2 text-[15px] outline-none focus:border-ink"
+              className="w-full mt-1.5 rounded-2xl bg-soft px-4 py-3 text-[15px] outline-none focus:ring-2 focus:ring-ink/10"
             >
               {db.oils.map((o) => (
                 <option key={o.id} value={o.id}>
@@ -307,14 +307,14 @@ export function PerfumeEditor({
           value={p.summary}
           onChange={(e) => set("summary", e.target.value)}
           rows={3}
-          className="display w-full resize-none border-b border-line-2 bg-transparent py-2 text-2xl leading-snug outline-none focus:border-ink"
+          className="w-full resize-none rounded-2xl bg-soft px-4 py-3 text-[17px] leading-relaxed outline-none focus:ring-2 focus:ring-ink/10"
         />
       </Group>
 
-      <div className="sticky bottom-20 z-10 flex justify-end md:bottom-6">
+      <div className="sticky bottom-24 z-10 flex justify-end pt-2 md:bottom-6">
         <button
           disabled={saving || !p.name || !p.house}
-          className="rounded-full bg-ink px-7 py-3.5 text-sm text-paper shadow-[0_10px_30px_-10px_rgba(29,27,24,0.5)] disabled:opacity-40"
+          className="rounded-full bg-ink px-7 py-4 text-sm font-semibold text-white shadow-lift transition active:scale-[0.98] disabled:opacity-40"
         >
           {saving ? "Enregistrement…" : submitLabel}
         </button>
@@ -325,9 +325,9 @@ export function PerfumeEditor({
 
 function Group({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <fieldset>
-      <legend className="eyebrow mb-5 w-full border-b border-line pb-2 text-ink">{title}</legend>
-      {children}
+    <fieldset className="rounded-4xl bg-card p-5 shadow-soft md:p-7">
+      <legend className="float-left mb-5 w-full text-lg font-semibold tracking-tight">{title}</legend>
+      <div className="clear-both">{children}</div>
     </fieldset>
   );
 }
@@ -335,7 +335,7 @@ function Group({ title, children }: { title: string; children: React.ReactNode }
 function Field({ label, children, className = "" }: { label: string; children: React.ReactNode; className?: string }) {
   return (
     <div className={className}>
-      <span className="eyebrow">{label}</span>
+      <span className="label">{label}</span>
       {children}
     </div>
   );
@@ -351,7 +351,7 @@ function Text({
       {...rest}
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      className="w-full border-b border-line-2 bg-transparent py-2 text-[15px] outline-none focus:border-ink"
+      className="w-full mt-1.5 rounded-2xl bg-soft px-4 py-3 text-[15px] outline-none focus:ring-2 focus:ring-ink/10"
     />
   );
 }
@@ -365,7 +365,7 @@ function Range({ min, max, onChange }: { min: number; max: number; onChange: (mi
         min={0}
         value={min}
         onChange={(e) => onChange(num(e.target.value), Math.max(num(e.target.value), max))}
-        className="w-20 border-b border-line-2 bg-transparent py-2 text-[15px] outline-none focus:border-ink"
+        className="w-20 mt-1.5 rounded-2xl bg-soft px-4 py-3 text-[15px] outline-none focus:ring-2 focus:ring-ink/10"
       />
       <span className="text-muted">à</span>
       <input
@@ -373,7 +373,7 @@ function Range({ min, max, onChange }: { min: number; max: number; onChange: (mi
         min={0}
         value={max}
         onChange={(e) => onChange(Math.min(min, num(e.target.value)), num(e.target.value))}
-        className="w-20 border-b border-line-2 bg-transparent py-2 text-[15px] outline-none focus:border-ink"
+        className="w-20 mt-1.5 rounded-2xl bg-soft px-4 py-3 text-[15px] outline-none focus:ring-2 focus:ring-ink/10"
       />
     </div>
   );

@@ -26,23 +26,27 @@ export function PhotoManager({ perfume, families }: { perfume: Perfume; families
   }
 
   return (
-    <div>
+    <div className="relative">
       <BottleImage
         name={perfume.name}
         family={perfume.family}
         imageUrl={perfume.image_url}
         families={families}
         size="lg"
-        className="aspect-[4/3] rounded-3xl md:aspect-[4/5]"
+        className="aspect-[4/3] md:aspect-auto md:h-full md:min-h-[520px]"
       />
-      <button type="button" onClick={() => setOpen(!open)} className="mt-3 text-[13px] text-muted hover:text-ink">
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        className="glass absolute right-4 top-4 rounded-full px-3.5 py-2 text-[12.5px] font-semibold shadow-soft"
+      >
         {open ? "Fermer" : perfume.image_url ? "Changer la photo" : "Ajouter une photo"}
       </button>
 
       {open && (
-        <div className="rise mt-3 rounded-2xl border border-line bg-card p-4">
+        <div className="rise absolute inset-x-3 top-16 z-10 max-h-[80%] overflow-y-auto rounded-3xl bg-card p-4 shadow-lift">
           {busy ? (
-            <p className="breathe text-sm text-muted">Enregistrement…</p>
+            <p className="pulse-soft text-sm text-muted">Enregistrement…</p>
           ) : (
             <>
               <ImagePicker
@@ -51,7 +55,7 @@ export function PhotoManager({ perfume, families }: { perfume: Perfume; families
                 onPick={(url) => save({ headers: { "content-type": "application/json" }, body: JSON.stringify({ url }) })}
               />
               <label className="mt-4 block cursor-pointer text-sm text-ink-2 hover:text-ink">
-                <span className="underline underline-offset-4">Importer depuis l&apos;appareil</span>
+                <span className="font-medium underline underline-offset-4">Importer depuis l&apos;appareil</span>
                 <input
                   type="file"
                   accept="image/*"

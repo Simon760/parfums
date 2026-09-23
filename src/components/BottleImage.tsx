@@ -1,5 +1,9 @@
+"use client";
+
 /* eslint-disable @next/next/no-img-element */
+import { useEffect, useRef, useState } from "react";
 import type { OlfactothequeDB } from "@/lib/types";
+import { meshGradient } from "@/lib/client/lookup";
 
 interface Props {
   name: string;
@@ -11,47 +15,60 @@ interface Props {
   size?: "sm" | "md" | "lg";
 }
 
-/** Photo du flacon, ou visuel généré à partir de la famille olfactive. */
+/** Photo du flacon sur un fond dégradé de sa famille, ou flacon stylisé si pas de photo. */
 export function BottleImage({ name, family, imageUrl, families, className = "", size = "md" }: Props) {
-  const color = families.find((f) => f.id === family)?.color ?? "#b9ae9a";
+  const [failed, setFailed] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  // Une erreur survenue avant l'hydratation ne déclenche pas onError : on vérifie au montage.
+  useEffect(() => {
+    const img = imgRef.current;
+     
+    if (img?.complete && img.naturalWidth === 0) setFailed(true);
+  }, [imageUrl]);
+  const color = families.find((f) => f.id === family)?.color ?? "#9aa3b5";
+  const showImage = imageUrl && !failed;
+  const pad = size === "sm" ? "p-[10%]" : size === "lg" ? "p-[12%]" : "p-[11%]";
+
   return (
-    <div
-      className={`relative overflow-hidden bg-paper-2 ${className}`}
-      style={{ background: `radial-gradient(120% 90% at 50% 100%, ${color}40 0%, ${color}14 45%, var(--paper-2) 75%)` }}
-    >
-      {imageUrl ? (
+    <div className={`relative overflow-hidden ${className}`} style={{ background: meshGradient(color) }}>
+      {showImage ? (
         <img
+          ref={imgRef}
           src={imageUrl}
           alt={name}
           loading="lazy"
-          className="absolute inset-0 h-full w-full object-contain p-[8%] mix-blend-multiply"
+          referrerPolicy="no-referrer"
+          onError={() => setFailed(true)}
+          className={`absolute inset-0 h-full w-full object-contain ${pad} mix-blend-multiply drop-shadow-[0_18px_22px_rgba(13,14,18,0.18)]`}
         />
       ) : (
-        <GeneratedBottle name={name} color={color} size={size} />
+        <GlassBottle color={color} small={size === "sm"} />
       )}
     </div>
   );
 }
 
-function GeneratedBottle({ name, color, size }: { name: string; color: string; size: "sm" | "md" | "lg" }) {
-  const initial = name.trim().charAt(0).toUpperCase();
+function GlassBottle({ color, small }: { color: string; small: boolean }) {
+  const key = color.replace(/[^a-z0-9]/gi, "");
   return (
     <div className="absolute inset-0 flex items-center justify-center">
-      <svg viewBox="0 0 100 140" className="h-[46%] w-auto drop-shadow-[0_10px_18px_rgba(29,27,24,0.07)]" aria-hidden>
-        <rect x="41" y="8" width="18" height="14" rx="2" fill="#2b2824" opacity="0.7" />
-        <rect x="45" y="22" width="10" height="8" fill="#2b2824" opacity="0.28" />
-        <rect x="14" y="30" width="72" height="104" rx="10" fill="#fbfaf7" stroke="#d4cec2" />
-        <rect x="18" y="80" width="64" height="50" rx="7" fill={color} opacity="0.3" />
-        <text
-          x="50"
-          y="68"
-          textAnchor="middle"
-          fontFamily="Instrument Serif, Georgia, serif"
-          fontSize={size === "sm" ? 30 : 34}
-          fill="#1d1b18"
-        >
-          {initial}
-        </text>
+      <svg viewBox="0 0 100 150" className={`${small ? "h-[62%]" : "h-[54%]"} w-auto drop-shadow-[0_20px_24px_rgba(13,14,18,0.18)]`} aria-hidden>
+        <defs>
+          <linearGradient id={`g-${key}`} x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor="#ffffff" stopOpacity="0.95" />
+            <stop offset="1" stopColor="#ffffff" stopOpacity="0.55" />
+          </linearGradient>
+          <linearGradient id={`j-${key}`} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor={color} stopOpacity="0.55" />
+            <stop offset="1" stopColor={color} stopOpacity="0.95" />
+          </linearGradient>
+        </defs>
+        <rect x="38" y="4" width="24" height="22" rx="5" fill="#0d0e12" />
+        <rect x="44" y="26" width="12" height="10" fill="#0d0e12" opacity="0.2" />
+        <rect x="12" y="36" width="76" height="110" rx="20" fill={`url(#g-${key})`} stroke="#ffffff" strokeWidth="1.5" />
+        <rect x="18" y="74" width="64" height="66" rx="15" fill={`url(#j-${key})`} />
+        <rect x="20" y="42" width="8" height="40" rx="4" fill="#ffffff" opacity="0.8" />
       </svg>
     </div>
   );

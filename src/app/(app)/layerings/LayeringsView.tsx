@@ -53,8 +53,8 @@ export function LayeringsView({ db }: { db: OlfactothequeDB }) {
     <div className="rise">
       <header className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <p className="eyebrow mb-2">{db.layerings.length} combinaisons</p>
-          <h1 className="display text-5xl md:text-7xl">Layerings</h1>
+          <p className="label mb-1">{db.layerings.length} combinaisons</p>
+          <h1 className="title text-[44px] md:text-[80px]">Layerings</h1>
         </div>
         <Segmented
           value={region}
@@ -87,7 +87,7 @@ export function LayeringsView({ db }: { db: OlfactothequeDB }) {
         <select
           value={ingredient}
           onChange={(e) => setIngredient(e.target.value)}
-          className="rounded-full border border-line-2 bg-card px-3 py-1.5 text-[13px] text-ink outline-none"
+          className="rounded-full bg-card px-4 py-2 text-[13px] font-medium shadow-soft outline-none"
         >
           <option value="">Avec n&apos;importe quel parfum</option>
           {ingredients.map((i) => (
@@ -100,7 +100,7 @@ export function LayeringsView({ db }: { db: OlfactothequeDB }) {
       </div>
 
       {list.length === 0 ? (
-        <p className="py-16 text-center text-muted">Aucun layering ne correspond.</p>
+        <p className="rounded-3xl bg-card py-16 text-center text-muted shadow-soft">Aucun layering ne correspond.</p>
       ) : (
         <div className="grid gap-4 md:grid-cols-2">
           {list.map((l) => (
@@ -116,7 +116,7 @@ export function LayeringsView({ db }: { db: OlfactothequeDB }) {
                   value={l.status}
                   disabled={pending === l.id}
                   onChange={(e) => setStatus(l.id, e.target.value as LayeringStatus)}
-                  className="rounded-full border border-line bg-paper px-2 py-1 text-[12px] text-muted outline-none hover:text-ink"
+                  className="rounded-full bg-soft px-3 py-1.5 text-[12px] font-semibold text-ink-2 outline-none"
                 >
                   {LAYERING_STATUSES.map((s) => (
                     <option key={s} value={s}>

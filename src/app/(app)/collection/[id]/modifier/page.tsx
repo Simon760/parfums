@@ -13,10 +13,10 @@ export default async function EditPage({ params }: PageProps<"/collection/[id]/m
   if (!perfume) notFound();
   return (
     <div className="rise mx-auto max-w-3xl">
-      <Link href={`/collection/${id}`} className="mb-6 inline-block text-sm text-muted hover:text-ink">
+      <Link href={`/collection/${id}`} className="mb-4 inline-block text-sm font-medium text-muted hover:text-ink">
         ← {perfume.name}
       </Link>
-      <h1 className="display mb-10 text-5xl md:text-6xl">Modifier la fiche</h1>
+      <h1 className="title mb-6 text-[40px] md:text-6xl">Modifier la fiche</h1>
       <EditPerfume db={db} perfume={perfume} />
     </div>
   );
